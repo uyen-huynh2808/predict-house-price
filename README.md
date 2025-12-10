@@ -11,7 +11,7 @@ Cấu trúc thư mục được tổ chức theo chuẩn MDI (Modular Design for
 ``` text
 FINAL_PROJECT_DS_K23/
 │
-├── main.py             # Lõi Điều Phối (Orchestrator): File chạy chính, điều khiển luồng dữ liệu giữa tất cả các module.
+├── main.py             # Lõi Điều Phối: File chạy chính, điều khiển luồng dữ liệu giữa tất cả các module.
 ├── requirements.txt    # Quản lý Phụ thuộc: Danh sách các thư viện Python cần thiết.
 │
 ├── config/             # Quản lý Cấu hình
@@ -19,7 +19,7 @@ FINAL_PROJECT_DS_K23/
 │
 ├── data/               # Quản lý Dữ liệu
 │   ├── raw/            # Dữ liệu Thô
-│   │   └── rawdata.csv # Dữ liệu đầu vào ban đầu (đã có sẵn trong Repo).
+│   │   └── rawdata.csv # Dữ liệu đầu vào ban đầu.
 │   └── processed/      # Dữ liệu Sạch
 │       └── df_model_ready.csv, EDA_data.csv # Dữ liệu sau xử lý, sẵn sàng cho Model và Visualization.
 │
@@ -30,10 +30,14 @@ FINAL_PROJECT_DS_K23/
 │   ├── saved_models/   # Mô hình Tuần tự hóa (.joblib: Voting_Ensemble, scaler...).
 │   └── metrics/        # Kết quả Định lượng (model_results_summary.csv/.json: bảng tổng hợp RMSE, R2, MAE của các mô hình).
 │
+├── notebooks/          # Notebook dùng để chạy nháp, EDA và thử nghiệm ban đầu
+│
 ├── reports/            # Báo cáo và Hình ảnh
-│   └── figures/        # Biểu đồ Tự động Sinh (so sánh hiệu năng, Residuals, Feature Importance).
+│   ├── figures/        # Thư mục các hình ảnh/biểu đồ (so sánh hiệu năng, Residuals, Feature Importance).
+│   └── Final_Report_Group6.pdf # Báo cáo cuối kỳ
 │
 └── src/                # SOURCE CODE CHÍNH (Modules OOP)
+     ├── __init__.py      # Biến thư mục này thành Python package
      ├── preprocessor.py  # Data Preprocessing: Chứa các Class xử lý Tiền xử lý, Imputation, Lọc ngoại lai và Feature Engineering.
      ├── model_trainer.py # Model Training & Tuning: Class quản lý toàn bộ quy trình huấn luyện, tối ưu tham số và đánh giá mô hình.
      ├── visualization.py # Trực quan hóa: Các hàm hỗ trợ vẽ biểu đồ EDA chuyên sâu và phân tích kết quả mô hình.
