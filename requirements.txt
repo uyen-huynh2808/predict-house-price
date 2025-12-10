@@ -1,0 +1,25 @@
+# --- Core Data Science ---
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0       # Hỗ trợ tính toán thống kê (skew, kurtosis)
+
+# --- Statistical Analysis ---
+statsmodels>=0.14.0 # Hỗ trợ tính VIF, ANOVA (Sửa lỗi ModuleNotFoundError)
+
+# --- Machine Learning ---
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+
+# --- Visualization ---
+matplotlib>=3.7.0
+seaborn>=0.13.0
+
+# --- Utilities & IO ---
+pyyaml>=6.0         # Để đọc file config.yaml
+joblib>=1.3.0       # Để lưu/load model
+openpyxl>=3.1.0     # Cần thiết để pandas đọc file .xlsx (Excel)
+
+# --- Notebook Environment ---
+jupyter>=1.0.0
+notebook>=7.0.0
+ipykernel>=6.0.0

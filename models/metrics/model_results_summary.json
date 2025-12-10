@@ -1,0 +1,59 @@
+[
+  {
+    "model": "RandomForest",
+    "MAE_Test": 0.1537949377224931,
+    "MSE_Test": 0.06692748602944139,
+    "RMSE_Test": 0.25870347123577875,
+    "R2_Test": 0.5512578666375729,
+    "RMSE_Train": 0.23132175349959622,
+    "R2_Train": 0.642769728513728,
+    "best_params": {
+      "n_estimators": 300,
+      "min_samples_split": 5,
+      "min_samples_leaf": 4,
+      "max_features": "sqrt",
+      "max_depth": 20
+    }
+  },
+  {
+    "model": "XGBoost",
+    "MAE_Test": 0.15278575273617293,
+    "MSE_Test": 0.06696962081075643,
+    "RMSE_Test": 0.2587848929337963,
+    "R2_Test": 0.5509753571220093,
+    "RMSE_Train": 0.2228300524274496,
+    "R2_Train": 0.6685158044127529,
+    "best_params": {
+      "subsample": 0.7,
+      "reg_lambda": 10.0,
+      "reg_alpha": 0.1,
+      "n_estimators": 1500,
+      "max_depth": 6,
+      "learning_rate": 0.02,
+      "colsample_bytree": 0.7
+    }
+  },
+  {
+    "model": "SVR",
+    "MAE_Test": 0.19076733009802505,
+    "MSE_Test": 0.0802541004995841,
+    "RMSE_Test": 0.28329154681985147,
+    "R2_Test": 0.46190424284839093,
+    "RMSE_Train": 0.28437940778914755,
+    "R2_Train": 0.46010215610788785,
+    "best_params": {
+      "epsilon": 0.1,
+      "C": 0.01
+    }
+  },
+  {
+    "model": "Voting_Ensemble",
+    "MAE_Test": 0.151843461552664,
+    "MSE_Test": 0.06611235978802564,
+    "RMSE_Test": 0.25712323852196955,
+    "R2_Test": 0.5567232069668315,
+    "RMSE_Train": 0.2253412062546809,
+    "R2_Train": 0.661002471698612,
+    "best_params": "Ensemble (Soft Voting)"
+  }
+]

@@ -1,0 +1,92 @@
+# config/config.yaml
+
+# =========================
+# 1. CẤU HÌNH ĐƯỜNG DẪN (PATHS)
+# =========================
+paths:
+  raw_data: "data/raw/rawdata.csv"
+  eda_path: "data/processed/EDA_data.csv"
+  processed_path: "data/processed/df_model_ready.csv"
+  models_dir: "models/saved_models"
+  metrics_dir: "models/metrics"
+  figures_dir: "reports/figures"
+  log_path: "logs/full_pipeline.log"
+
+# =========================
+# 2. CẤU HÌNH DỮ LIỆU CHUNG (DATA)
+# =========================
+data:
+  target_col: "Gia"
+  test_size: 0.2
+  random_seed: 42
+  
+  # Các cột cần xử lý
+  numeric_cols: ["DienTich", "MatTien", "DuongVao", "SoTang", "SoPhongNgu", "SoToilet"]
+  categorical_cols: ["HuongNha", "PhapLy"]
+
+# =========================
+# 3. CẤU HÌNH TIỀN XỬ LÝ (PREPROCESSING)
+# =========================
+preprocessing:
+  # Cấu hình xử lý Missing Values
+  missing_strategies:
+    numeric: "median"       # mean, median, zero
+    categorical: "mode"     # mode, constant
+  
+  # Cấu hình xử lý Outliers
+  outlier_method: "iqr"     # iqr, z-score
+  outlier_threshold: 1.5
+  outlier_action: "remove"  # remove, replace_nan
+
+  # Cấu hình Feature Engineering cho Bất Động Sản
+  # Tỷ giá quy đổi về Triệu đồng
+  unit_factors:
+    "tỷ": 1000.0
+    "ty": 1000.0
+    "triệu": 1.0
+    "tr": 1.0
+    "nghìn": 0.001
+    "ngàn": 0.001
+    "k": 0.001
+    "đ": 0.000001
+    "vnđ": 0.000001
+    "đồng": 0.000001
+
+  # Mapping chuẩn hóa tên Quận/Huyện
+  district_mapping:
+    "bình chánh": "Huyện Bình Chánh"
+    "binh chanh": "Huyện Bình Chánh"
+    "nhà bè": "Huyện Nhà Bè"
+    "nha be": "Huyện Nhà Bè"
+    "hóc môn": "Huyện Hóc Môn"
+    "hoc mon": "Huyện Hóc Môn"
+    "củ chi": "Huyện Củ Chi"
+    "cu chi": "Huyện Củ Chi"
+    "cần giờ": "Huyện Cần Giờ"
+    "can gio": "Huyện Cần Giờ"
+    "thủ đức": "Thành phố Thủ Đức"
+    "thu duc": "Thành phố Thủ Đức"
+    "quận 2": "Thành phố Thủ Đức"
+    "quan 2": "Thành phố Thủ Đức"
+    "quận 9": "Thành phố Thủ Đức"
+    "quan 9": "Thành phố Thủ Đức"
+    "tân phú": "Quận Tân Phú"
+    "tan phu": "Quận Tân Phú"
+    "bình tân": "Quận Bình Tân"
+    "binh tan": "Quận Bình Tân"
+    "phú nhuận": "Quận Phú Nhuận"
+    "phu nhuan": "Quận Phú Nhuận"
+    "bình thạnh": "Quận Bình Thạnh"
+    "binh thanh": "Quận Bình Thạnh"
+    "tân bình": "Quận Tân Bình"
+    "tan binh": "Quận Tân Bình"
+    "gò vấp": "Quận Gò Vấp"
+    "go vap": "Quận Gò Vấp"
+
+# =========================
+# 4. CẤU HÌNH TRAINING (TRAINING)
+# =========================
+training:
+  n_iter: 20  
+  cv: 5
+  scoring: "neg_root_mean_squared_error"

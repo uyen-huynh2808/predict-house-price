@@ -1,0 +1,413 @@
+2025-12-10 10:14:50 [MainPipeline] [INFO] === Báº®T Äáº¦U QUY TRÃŒNH Xá»¬ LÃ Dá»® LIá»†U (OOP PIPELINE) ===
+2025-12-10 10:14:50 [MainPipeline] [INFO] ÄÃ£ Ä‘á»c dá»¯ liá»‡u tá»« data/raw/rawdata.csv - Shape: (24949, 16)
+2025-12-10 10:14:50 [MainPipeline] [INFO] TrÃ­ch xuáº¥t Ä‘áº·c trÆ°ng BÄS (ÄÆ¡n vá»‹ Ä‘Ã­ch: triá»‡u)...
+2025-12-10 10:14:50 [MainPipeline] [INFO] ÄÃ£ clean diá»‡n tÃ­ch: DienTich
+2025-12-10 10:14:50 [MainPipeline] [INFO] ÄÃ£ clean giÃ¡: Gia
+2025-12-10 10:14:51 [MainPipeline] [INFO] ÄÃ£ trÃ­ch xuáº¥t Quáº­n/Huyá»‡n tá»«: DiaChi
+2025-12-10 10:14:51 [MainPipeline] [INFO] >> [Giai Ä‘oáº¡n 1] LÃ m sáº¡ch cáº¥u trÃºc & XÃ³a cá»™t rÃ¡c
+2025-12-10 10:14:51 [MainPipeline] [INFO] ÄÃ£ xÃ³a cá»™t: ['MaCanHo', 'TenPhanKhu']
+2025-12-10 10:14:51 [MainPipeline] [INFO] ÄÃ£ Ä‘á»•i tÃªn cá»™t: {'Phongngu': 'PhongNgu'}
+2025-12-10 10:14:51 [MainPipeline] [INFO] >> [Giai Ä‘oáº¡n 2] TrÃ­ch xuáº¥t thÃ´ng tin tá»« dá»¯ liá»‡u thÃ´
+2025-12-10 10:14:51 [MainPipeline] [INFO] TrÃ­ch xuáº¥t Ä‘áº·c trÆ°ng BÄS (ÄÆ¡n vá»‹ Ä‘Ã­ch: tá»·)...
+2025-12-10 10:14:51 [MainPipeline] [INFO] ÄÃ£ clean diá»‡n tÃ­ch: DienTich
+2025-12-10 10:14:51 [MainPipeline] [INFO] ÄÃ£ clean giÃ¡: Gia
+2025-12-10 10:14:51 [MainPipeline] [INFO] ÄÃ£ trÃ­ch xuáº¥t Quáº­n/Huyá»‡n tá»«: DiaChi
+2025-12-10 10:14:51 [MainPipeline] [INFO] ÄÃ£ Ä‘á»•i tÃªn cá»™t: {'Quan_Huyen': 'Quan', 'Gia_Clean': 'Gia_Ty', 'DienTich_Clean': 'DienTich_m2'}
+2025-12-10 10:14:51 [MainPipeline] [INFO] ÄÃ£ xÃ³a cá»™t: ['DiaChi']
+2025-12-10 10:14:51 [MainPipeline] [INFO] ÄÃ£ trÃ­ch xuáº¥t sá»‘ liá»‡u phÃ²ng cho cá»™t: PhongNgu
+2025-12-10 10:14:51 [MainPipeline] [INFO] ÄÃ£ trÃ­ch xuáº¥t sá»‘ liá»‡u phÃ²ng cho cá»™t: PhongTam
+2025-12-10 10:14:51 [MainPipeline] [INFO] ÄÃ£ chuáº©n hÃ³a nhá»‹ phÃ¢n cá»™t DacDiem (NaN=KXÄ)
+2025-12-10 10:14:51 [MainPipeline] [INFO] ÄÃ£ Ä‘á»•i tÃªn cá»™t: {'DacDiem': 'CanGoc'}
+2025-12-10 10:14:51 [MainPipeline] [INFO] >> [Giai Ä‘oáº¡n 3] Xá»­ lÃ½ dá»¯ liá»‡u thiáº¿u
+2025-12-10 10:14:51 [MainPipeline] [INFO] Báº¯t Ä‘áº§u xá»­ lÃ½ Missing Values...
+2025-12-10 10:14:51 [MainPipeline] [INFO] Col 'TinhTrangBDS': ÄÃ£ xá»­ lÃ½ missing báº±ng chiáº¿n lÆ°á»£c 'mode'.
+2025-12-10 10:14:51 [MainPipeline] [INFO] Col 'Loai': ÄÃ£ xá»­ lÃ½ missing báº±ng chiáº¿n lÆ°á»£c 'mode'.
+2025-12-10 10:14:51 [MainPipeline] [INFO] Col 'PhongNgu': ÄÃ£ xá»­ lÃ½ missing báº±ng chiáº¿n lÆ°á»£c 'mode'.
+2025-12-10 10:14:51 [MainPipeline] [INFO] Col 'PhongTam': ÄÃ£ xá»­ lÃ½ missing báº±ng chiáº¿n lÆ°á»£c 'mode'.
+2025-12-10 10:14:51 [MainPipeline] [INFO] Báº¯t Ä‘áº§u xá»­ lÃ½ Missing Values...
+2025-12-10 10:14:51 [MainPipeline] [INFO] Col 'TinhTrangNoiThat': ÄÃ£ xá»­ lÃ½ missing báº±ng chiáº¿n lÆ°á»£c 'constant'.
+2025-12-10 10:14:51 [MainPipeline] [INFO] Báº¯t Ä‘áº§u xá»­ lÃ½ Missing Values...
+2025-12-10 10:14:51 [MainPipeline] [INFO] Col 'GiayTo': ÄÃ£ xá»­ lÃ½ missing báº±ng chiáº¿n lÆ°á»£c 'constant'.
+2025-12-10 10:14:51 [MainPipeline] [INFO] Báº¯t Ä‘áº§u xá»­ lÃ½ Missing Values...
+2025-12-10 10:14:51 [MainPipeline] [INFO] Col 'HuongCuaChinh': ÄÃ£ xá»­ lÃ½ missing báº±ng chiáº¿n lÆ°á»£c 'constant'.
+2025-12-10 10:14:51 [MainPipeline] [INFO] Col 'HuongBanCong': ÄÃ£ xá»­ lÃ½ missing báº±ng chiáº¿n lÆ°á»£c 'constant'.
+2025-12-10 10:14:51 [MainPipeline] [INFO] >> [Giai Ä‘oáº¡n 4] Chuáº©n hÃ³a dá»¯ liá»‡u phÃ¢n loáº¡i
+2025-12-10 10:14:51 [MainPipeline] [INFO] ÄÃ£ map dá»¯ liá»‡u cá»™t TinhTrangNoiThat -> TinhTrangNoiThat.
+2025-12-10 10:14:51 [MainPipeline] [INFO] ÄÃ£ chuáº©n hÃ³a loáº¡i BÄS: Loai -> Loai
+2025-12-10 10:14:51 [MainPipeline] [INFO] >> [Giai Ä‘oáº¡n 5] Logic nghiá»‡p vá»¥ & Kiá»ƒm tra chÃ©o
+2025-12-10 10:14:51 [MainPipeline] [INFO] Kiá»ƒm tra chÃ©o: Dá»¯ liá»‡u há»£p lÃ½.
+2025-12-10 10:14:51 [MainPipeline] [INFO] Lá»c diá»‡n tÃ­ch ngoáº¡i lai (30 - 110 m2)...
+2025-12-10 10:14:51 [MainPipeline] [INFO] >> [Giai Ä‘oáº¡n 6] Lá»c ngoáº¡i lai thá»‘ng kÃª (IQR)
+2025-12-10 10:14:51 [MainPipeline] [INFO] Xá»­ lÃ½ ngoáº¡i lai (Method: iqr, Action: remove)...
+2025-12-10 10:14:51 [MainPipeline] [INFO] Col 'DonGia_m2': ÄÃ£ xÃ³a 680 dÃ²ng ngoáº¡i lai.
+2025-12-10 10:14:51 [MainPipeline] [INFO] >> [Feature Engineering] Táº¡o biáº¿n tÆ°Æ¡ng tÃ¡c
+2025-12-10 10:14:51 [MainPipeline] [INFO] >> [Optimization] Ãp dá»¥ng Log Transform cho cá»™t Target
+2025-12-10 10:14:51 [MainPipeline] [INFO] >> [SAVE] LÆ°u file dá»¯ liá»‡u sáº¡ch cho EDA: data/processed/EDA_data.csv
+2025-12-10 10:14:51 [MainPipeline] [INFO] ÄÃ£ lÆ°u dá»¯ liá»‡u xuá»‘ng: data/processed/EDA_data.csv
+2025-12-10 10:14:51 [MainPipeline] [INFO] >> ÄÃ£ xÃ³a cá»™t 'Gia_m2' khá»i táº­p dá»¯ liá»‡u Train Ä‘á»ƒ chá»‘ng Leakage.
+2025-12-10 10:14:51 [MainPipeline] [INFO] 
+=============================================
+2025-12-10 10:14:51 [MainPipeline] [INFO]    Báº®T Äáº¦U VISUALIZATION (EDA PHASE)
+2025-12-10 10:14:51 [MainPipeline] [INFO] =============================================
+2025-12-10 10:15:08 [MainPipeline] [INFO] >> EDA hoÃ n táº¥t. CÃ¡c biá»ƒu Ä‘á»“ Ä‘Ã£ Ä‘Æ°á»£c lÆ°u.
+2025-12-10 10:15:08 [MainPipeline] [INFO] >> [Giai Ä‘oáº¡n 7] Chuáº©n bá»‹ dá»¯ liá»‡u cho Model
+2025-12-10 10:15:08 [MainPipeline] [INFO] >> Cáº­p nháº­t Target: Sá»­ dá»¥ng Log_Gia thay cho Gia gá»‘c.
+2025-12-10 10:15:08 [MainPipeline] [INFO] >> [SAVE] LÆ°u file dá»¯ liá»‡u (Unscaled) cho Model: data/processed/df_model_ready.csv
+2025-12-10 10:15:09 [MainPipeline] [INFO] ÄÃ£ lÆ°u dá»¯ liá»‡u xuá»‘ng: data/processed/df_model_ready.csv
+2025-12-10 10:15:09 [MainPipeline] [INFO] 
+=== Báº®T Äáº¦U QUY TRÃŒNH HUáº¤N LUYá»†N MODEL ===
+2025-12-10 10:15:09 [MainPipeline] [INFO] ===== ModelTrainer khá»Ÿi táº¡o thÃ nh cÃ´ng =====
+2025-12-10 10:15:09 [MainPipeline] [INFO] ÄÃ£ load data tá»« data/processed/df_model_ready.csv vá»›i shape (22502, 28)
+2025-12-10 10:15:09 [MainPipeline] [INFO] ÄÃ£ chia train/test: Train=(18001, 27), Test=(4501, 27)
+2025-12-10 10:15:09 [MainPipeline] [INFO] Äang thá»±c hiá»‡n Scaling (MinMax) trÃªn cÃ¡c cá»™t: ['DienTich_m2', 'PhongNgu', 'PhongTam', 'TongPhong', 'DienTich_per_Phong', 'TyLe_Ngu_Tam']
+2025-12-10 10:15:09 [MainPipeline] [INFO] ÄÃ£ lÆ°u Scaler táº¡i: models/saved_models\scaler.joblib
+2025-12-10 10:15:09 [MainPipeline] [INFO] ============================================================
+2025-12-10 10:15:09 [MainPipeline] [INFO] Tá»‘i Æ°u siÃªu tham sá»‘ cho model: RandomForest
+2025-12-10 10:15:09 [MainPipeline] [INFO] -> Cháº¡y Search vá»›i n_iter=20, cv=5
+2025-12-10 10:15:35 [MainPipeline] [INFO] Best params cho RandomForest: {'n_estimators': 300, 'min_samples_split': 5, 'min_samples_leaf': 4, 'max_features': 'sqrt', 'max_depth': 20}
+2025-12-10 10:15:35 [MainPipeline] [INFO] [RandomForest] TRAIN: R2=0.6428, RMSE=0.2313 | TEST: R2=0.5513, RMSE=0.2587
+2025-12-10 10:15:35 [MainPipeline] [INFO] ÄÃ£ lÆ°u model [RandomForest] vÃ o: models/saved_models\RandomForest_best_model.joblib
+2025-12-10 10:15:35 [MainPipeline] [INFO] ============================================================
+2025-12-10 10:15:35 [MainPipeline] [INFO] Tá»‘i Æ°u siÃªu tham sá»‘ cho model: XGBoost
+2025-12-10 10:15:35 [MainPipeline] [INFO] -> Cháº¡y Search vá»›i n_iter=20, cv=5
+2025-12-10 10:15:53 [MainPipeline] [INFO] Best params cho XGBoost: {'subsample': 0.7, 'reg_lambda': 10.0, 'reg_alpha': 0.1, 'n_estimators': 1500, 'max_depth': 6, 'learning_rate': 0.02, 'colsample_bytree': 0.7}
+2025-12-10 10:15:53 [MainPipeline] [INFO] [XGBoost] TRAIN: R2=0.6685, RMSE=0.2228 | TEST: R2=0.5510, RMSE=0.2588
+2025-12-10 10:15:53 [MainPipeline] [INFO] ÄÃ£ lÆ°u model [XGBoost] vÃ o: models/saved_models\XGBoost_best_model.joblib
+2025-12-10 10:15:53 [MainPipeline] [INFO] ============================================================
+2025-12-10 10:15:53 [MainPipeline] [INFO] Tá»‘i Æ°u siÃªu tham sá»‘ cho model: SVR
+2025-12-10 10:15:53 [MainPipeline] [INFO] -> Cháº¡y Search vá»›i n_iter=20, cv=5
+2025-12-10 10:16:56 [MainPipeline] [INFO] Best params cho SVR: {'epsilon': 0.1, 'C': 0.01}
+2025-12-10 10:16:59 [MainPipeline] [INFO] [SVR] TRAIN: R2=0.4601, RMSE=0.2844 | TEST: R2=0.4619, RMSE=0.2833
+2025-12-10 10:16:59 [MainPipeline] [INFO] ÄÃ£ lÆ°u model [SVR] vÃ o: models/saved_models\SVR_best_model.joblib
+2025-12-10 10:16:59 [MainPipeline] [INFO] ============================================================
+2025-12-10 10:16:59 [MainPipeline] [INFO] Äang huáº¥n luyá»‡n Voting Regressor tá»«: ['RandomForest', 'XGBoost']...
+2025-12-10 10:17:02 [MainPipeline] [INFO] [Voting_Ensemble] TRAIN: R2=0.6610, RMSE=0.2253 | TEST: R2=0.5567, RMSE=0.2571
+2025-12-10 10:17:02 [MainPipeline] [INFO] ÄÃ£ lÆ°u model [Voting_Ensemble] vÃ o: models/saved_models\Voting_Ensemble_best_model.joblib
+2025-12-10 10:17:02 [MainPipeline] [INFO] ÄÃ£ lÆ°u báº£ng káº¿t quáº£ vÃ o: models/metrics\model_results_summary.csv
+2025-12-10 10:17:02 [MainPipeline] [INFO] ÄÃ£ lÆ°u báº£ng káº¿t quáº£ JSON vÃ o: models/metrics\model_results_summary.json
+2025-12-10 10:17:02 [MainPipeline] [INFO] MÃ´ hÃ¬nh tá»‘t nháº¥t theo RMSE: Voting_Ensemble. ÄÃ£ lÆ°u vÃ o: models/saved_models\best_overall_model.joblib
+2025-12-10 10:17:03 [MainPipeline] [INFO] ÄÃ£ lÆ°u biá»ƒu Ä‘á»“ RMSE: reports/figures\rmse_comparison.png
+2025-12-10 10:17:03 [MainPipeline] [INFO] ÄÃ£ lÆ°u biá»ƒu Ä‘á»“ MAE: reports/figures\mae_comparison.png
+2025-12-10 10:17:03 [MainPipeline] [INFO] MÃ´ hÃ¬nh tá»‘t nháº¥t: Voting_Ensemble
+2025-12-10 10:17:03 [MainPipeline] [INFO] 
+=============================================
+2025-12-10 10:17:03 [MainPipeline] [INFO]    Báº®T Äáº¦U PHÃ‚N TÃCH Káº¾T QUáº¢ MÃ” HÃŒNH
+2025-12-10 10:17:03 [MainPipeline] [INFO] =============================================
+2025-12-10 10:17:03 [MainPipeline] [INFO] >> Äang phÃ¢n tÃ­ch model: RandomForest
+2025-12-10 10:17:06 [MainPipeline] [INFO] >> Äang phÃ¢n tÃ­ch model: XGBoost
+2025-12-10 10:17:08 [MainPipeline] [INFO] >> Äang phÃ¢n tÃ­ch model: SVR
+2025-12-10 10:17:10 [MainPipeline] [INFO] Model SVR khÃ´ng cÃ³ feature_importances_. Chuyá»ƒn sang dÃ¹ng Permutation Importance.
+2025-12-10 10:17:44 [MainPipeline] [INFO] >> Äang phÃ¢n tÃ­ch model: Voting_Ensemble
+2025-12-10 10:17:45 [MainPipeline] [INFO] Model Voting_Ensemble khÃ´ng cÃ³ feature_importances_. Chuyá»ƒn sang dÃ¹ng Permutation Importance.
+2025-12-10 10:18:03 [MainPipeline] [INFO] >> Model Analysis hoÃ n táº¥t.
+2025-12-10 10:18:03 [MainPipeline] [INFO] === PIPELINE Káº¾T THÃšC THÃ€NH CÃ”NG ===
+-12-10 10:14:55,449 [src.visualization] [INFO]    - Std: 0.55 | Min-Max: 1.00 - 6.00 phòng
+2025-12-10 10:14:55,449 [src.visualization] [INFO]    - Skewness: 0.0832 (L\u1ec7ch ph\u1ea3i)
+2025-12-10 10:14:55,449 [src.visualization] [INFO]    - Kurtosis: 0.6853
+2025-12-10 10:14:56,048 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\phan_phoi_PhongNgu.png
+2025-12-10 10:14:56,152 [matplotlib.category] [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-12-10 10:14:56,162 [matplotlib.category] [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-12-10 10:14:56,692 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\feature_PhongNgu_DT_per_PN.png
+2025-12-10 10:14:56,703 [src.visualization] [INFO] \u0110ã x\u1eed lý Phòng ng\u1ee7: Clipped max 4 & T\u1ea1o bi\u1ebfn DT_per_PN
+2025-12-10 10:14:56,706 [src.visualization] [INFO] Th\u1ed1ng kê DT_per_PN:
+count    20741.000000
+mean        35.021843
+std          8.009752
+min         10.800000
+25%         30.000000
+50%         33.500000
+75%         37.500000
+max        104.000000
+Name: DT_per_PN, dtype: float64
+2025-12-10 10:14:56,709 [src.visualization] [INFO] 
+========== PHÂN TÍCH C\u1ed8T: PhongTam ==========
+2025-12-10 10:14:56,710 [src.visualization] [INFO] 1. T\u1ed5ng quan:
+2025-12-10 10:14:56,710 [src.visualization] [INFO]    - S\u1ed1 l\u01b0\u1ee3ng b\u1ea3n ghi: 20741
+2025-12-10 10:14:56,710 [src.visualization] [INFO]    - Missing Values: 0 (0.00%)
+2025-12-10 10:14:56,710 [src.visualization] [INFO]    - Zeros (Giá tr\u1ecb 0): 0 (0.00%)
+2025-12-10 10:14:56,710 [src.visualization] [INFO] 2. Xu h\u01b0\u1edbng t\u1eadp trung:
+2025-12-10 10:14:56,710 [src.visualization] [INFO]    - Mean: 1.72 phòng | Median: 2.00 phòng
+2025-12-10 10:14:56,710 [src.visualization] [INFO]    - Mode: 2.00 phòng
+2025-12-10 10:14:56,710 [src.visualization] [INFO] 3. \u0110\u1ed9 phân tán & Hình dáng:
+2025-12-10 10:14:56,710 [src.visualization] [INFO]    - Std: 0.47 | Min-Max: 1.00 - 6.00 phòng
+2025-12-10 10:14:56,710 [src.visualization] [INFO]    - Skewness: -0.5510 (L\u1ec7ch trái)
+2025-12-10 10:14:56,710 [src.visualization] [INFO]    - Kurtosis: 0.2808
+2025-12-10 10:14:57,248 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\phan_phoi_PhongTam.png
+2025-12-10 10:14:57,256 [src.visualization] [INFO] \u0110ã x\u1eed lý Phòng t\u1eafm: Clipped max 3
+2025-12-10 10:14:57,256 [src.visualization] [INFO] 
+--- B\u1eaeT \u0110\u1ea6U PHÂN TÍCH BI\u1ebeN CATEGORICAL ---
+2025-12-10 10:14:57,257 [src.visualization] [INFO] 
+========== PHÂN TÍCH C\u1ed8T: TinhTrangBDS ==========
+2025-12-10 10:14:57,258 [src.visualization] [INFO] S\u1ed1 l\u01b0\u1ee3ng giá tr\u1ecb duy nh\u1ea5t (Cardinality): 2
+2025-12-10 10:14:57,258 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:14:57,260 [src.visualization] [INFO]             Value  Count    Percent
+0     \u0110ã bàn giao  16613  80.097392
+1   Ch\u01b0a bàn giao   4128  19.902608
+2025-12-10 10:14:57,260 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:14:57,518 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\cat_TinhTrangBDS.png
+2025-12-10 10:14:57,529 [src.visualization] [INFO] 
+========== PHÂN TÍCH C\u1ed8T: Loai ==========
+2025-12-10 10:14:57,530 [src.visualization] [INFO] S\u1ed1 l\u01b0\u1ee3ng giá tr\u1ecb duy nh\u1ea5t (Cardinality): 4
+2025-12-10 10:14:57,530 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:14:57,531 [src.visualization] [INFO]             Value  Count    Percent
+0   Lo\u1ea1i Chung C\u01b0  19800  95.463092
+1  Lo\u1ea1i V\u0103n Phòng    706   3.403886
+2  Lo\u1ea1i H\u1ea1ng Sang    206   0.993202
+3    Lo\u1ea1i T\u1eadp Th\u1ec3     29   0.139820
+2025-12-10 10:14:57,531 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:14:57,813 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\cat_Loai.png
+2025-12-10 10:14:57,827 [src.visualization] [INFO] 
+========== PHÂN TÍCH C\u1ed8T: GiayTo ==========
+2025-12-10 10:14:57,828 [src.visualization] [INFO] S\u1ed1 l\u01b0\u1ee3ng giá tr\u1ecb duy nh\u1ea5t (Cardinality): 3
+2025-12-10 10:14:57,828 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:14:57,829 [src.visualization] [INFO]            Value  Count    Percent
+0    \u0110ang ch\u1edd s\u1ed5   7157  34.506533
+1   Gi\u1ea5y t\u1edd khác   6886  33.199942
+2       \u0110ã có s\u1ed5   6698  32.293525
+2025-12-10 10:14:57,829 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:14:58,116 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\cat_GiayTo.png
+2025-12-10 10:14:58,127 [src.visualization] [INFO] 
+========== PHÂN TÍCH C\u1ed8T: TinhTrangNoiThat ==========
+2025-12-10 10:14:58,128 [src.visualization] [INFO] S\u1ed1 l\u01b0\u1ee3ng giá tr\u1ecb duy nh\u1ea5t (Cardinality): 4
+2025-12-10 10:14:58,128 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:14:58,128 [src.visualization] [INFO]      Value  Count    Percent
+0      Thô  10485  50.552047
+1   C\u01a1 b\u1ea3n   4137  19.946001
+2  Cao c\u1ea5p   3217  15.510342
+3   \u0110\u1ea7y \u0111\u1ee7   2902  13.991611
+2025-12-10 10:14:58,129 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:14:58,379 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\cat_TinhTrangNoiThat.png
+2025-12-10 10:14:58,386 [src.visualization] [INFO] 
+========== PHÂN TÍCH C\u1ed8T: HuongCuaChinh ==========
+2025-12-10 10:14:58,388 [src.visualization] [INFO] S\u1ed1 l\u01b0\u1ee3ng giá tr\u1ecb duy nh\u1ea5t (Cardinality): 9
+2025-12-10 10:14:58,388 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:14:58,389 [src.visualization] [INFO]        Value  Count    Percent
+0       Khác  12774  61.588159
+1   \u0110ông Nam   1760   8.485608
+2        Nam   1332   6.422063
+3    Tây B\u1eafc   1325   6.388313
+4   \u0110ông B\u1eafc   1115   5.375826
+5       \u0110ông    772   3.722096
+6    Tây Nam    678   3.268888
+7        Tây    509   2.454076
+8        B\u1eafc    476   2.294971
+2025-12-10 10:14:58,389 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:14:58,691 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\cat_HuongCuaChinh.png
+2025-12-10 10:14:58,703 [src.visualization] [INFO] 
+========== PHÂN TÍCH C\u1ed8T: HuongBanCong ==========
+2025-12-10 10:14:58,704 [src.visualization] [INFO] S\u1ed1 l\u01b0\u1ee3ng giá tr\u1ecb duy nh\u1ea5t (Cardinality): 9
+2025-12-10 10:14:58,704 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:14:58,705 [src.visualization] [INFO]        Value  Count    Percent
+0       Khác  13225  63.762596
+1   \u0110ông Nam   1732   8.350610
+2    Tây Nam   1017   4.903332
+3   \u0110ông B\u1eafc    940   4.532086
+4        B\u1eafc    887   4.276554
+5       \u0110ông    885   4.266911
+6    Tây B\u1eafc    821   3.958343
+7        Tây    647   3.119425
+8        Nam    587   2.830143
+2025-12-10 10:14:58,706 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:14:59,040 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\cat_HuongBanCong.png
+2025-12-10 10:14:59,052 [src.visualization] [INFO] 
+========== PHÂN TÍCH C\u1ed8T: CanGoc ==========
+2025-12-10 10:14:59,053 [src.visualization] [INFO] S\u1ed1 l\u01b0\u1ee3ng giá tr\u1ecb duy nh\u1ea5t (Cardinality): 2
+2025-12-10 10:14:59,053 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:14:59,054 [src.visualization] [INFO]   Value  Count    Percent
+0   KX\u0110  16419  79.162046
+1  Ph\u1ea3i   4322  20.837954
+2025-12-10 10:14:59,054 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:14:59,308 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\cat_CanGoc.png
+2025-12-10 10:14:59,317 [src.visualization] [INFO] 
+========== PHÂN TÍCH C\u1ed8T: Quan ==========
+2025-12-10 10:14:59,318 [src.visualization] [INFO] S\u1ed1 l\u01b0\u1ee3ng giá tr\u1ecb duy nh\u1ea5t (Cardinality): 12
+2025-12-10 10:14:59,318 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:14:59,319 [src.visualization] [INFO]                 Value  Count    Percent
+0                Khác   7165  34.545104
+1   Thành ph\u1ed1 Th\u1ee7 \u0110\u1ee9c   5773  27.833759
+2       Qu\u1eadn Bình Tân   1860   8.967745
+3        Qu\u1eadn Tân Phú   1673   8.066149
+4        Huy\u1ec7n Nhà Bè    937   4.517622
+5     Qu\u1eadn Bình Th\u1ea1nh    751   3.620848
+6       Qu\u1eadn Tân Bình    736   3.548527
+7    Huy\u1ec7n Bình Chánh    648   3.124247
+8      Qu\u1eadn Phú Nhu\u1eadn    596   2.873536
+9         Qu\u1eadn Gò V\u1ea5p    565   2.724073
+10      Huy\u1ec7n Hóc Môn     33   0.159105
+11       Huy\u1ec7n C\u1ee7 Chi      4   0.019285
+2025-12-10 10:14:59,319 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:14:59,662 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\cat_Quan.png
+2025-12-10 10:14:59,672 [src.visualization] [INFO] 
+--- KI\u1ec2M TRA \u0110A C\u1ed8NG TUY\u1ebeN (MULTICOLLINEARITY) ---
+2025-12-10 10:14:59,956 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\heatmap_correlation.png
+2025-12-10 10:14:59,963 [src.visualization] [INFO] \u0110ang tính toán VIF...
+2025-12-10 10:14:59,985 [src.visualization] [INFO] 
+=== K\u1ebeT QU\u1ea2 VIF (VARIANCE INFLATION FACTOR) ===
+2025-12-10 10:14:59,985 [src.visualization] [INFO] Quy t\u1eafc: VIF > 5 (C\u1ea3nh báo), VIF > 10 (Nguy hi\u1ec3m - C\u1ea7n lo\u1ea1i b\u1ecf)
+2025-12-10 10:14:59,985 [src.visualization] [INFO] ------------------------------------------------------------
+2025-12-10 10:14:59,987 [src.visualization] [INFO]     Feature      VIF
+DienTich_m2 2.480254
+   PhongNgu 2.211549
+   PhongTam 1.726336
+     Gia_m2 1.047946
+2025-12-10 10:14:59,987 [src.visualization] [INFO] 
+--- PHÂN TÍCH T\u01af\u01a0NG QUAN V\u1edaI Log_Gia ---
+2025-12-10 10:14:59,996 [src.visualization] [INFO] H\u1ec6 S\u1ed0 T\u01af\u01a0NG QUAN PEARSON (r):
+2025-12-10 10:14:59,997 [src.visualization] [INFO] Gia_m2_trieu        0.825732
+Log_Gia_m2_trieu    0.822920
+DienTich_m2         0.668733
+PhongNgu_Clipped    0.458001
+PhongTam_Clipped    0.341816
+DT_per_PN           0.132849
+2025-12-10 10:15:05,360 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\scatter_correlation_Log_Gia.png
+2025-12-10 10:15:05,372 [src.visualization] [INFO] 
+=== BÁO CÁO PHÂN TÍCH ANOVA (ONE-WAY) ===
+2025-12-10 10:15:05,372 [src.visualization] [INFO] Feature              | F-Score    | P-value         | K\u1ebft lu\u1eadn
+2025-12-10 10:15:05,372 [src.visualization] [INFO] ---------------------------------------------------------------------------
+2025-12-10 10:15:05,391 [src.visualization] [INFO] Quan                 | 427.56     | < 0.001         | \u2b50\u2b50\u2b50
+2025-12-10 10:15:05,824 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\boxplot_Quan_anova.png
+2025-12-10 10:15:05,842 [src.visualization] [INFO] Loai                 | 221.44     | < 0.001         | \u2b50\u2b50\u2b50
+2025-12-10 10:15:06,137 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\boxplot_Loai_anova.png
+2025-12-10 10:15:06,161 [src.visualization] [INFO] GiayTo               | 15.87      | < 0.001         | \u2b50\u2b50\u2b50
+2025-12-10 10:15:06,483 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\boxplot_GiayTo_anova.png
+2025-12-10 10:15:06,505 [src.visualization] [INFO] TinhTrangNoiThat     | 409.76     | < 0.001         | \u2b50\u2b50\u2b50
+2025-12-10 10:15:06,795 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\boxplot_TinhTrangNoiThat_anova.png
+2025-12-10 10:15:06,812 [src.visualization] [INFO] HuongCuaChinh        | 64.42      | < 0.001         | \u2b50\u2b50\u2b50
+2025-12-10 10:15:07,227 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\boxplot_HuongCuaChinh_anova.png
+2025-12-10 10:15:07,244 [src.visualization] [INFO] HuongBanCong         | 44.81      | < 0.001         | \u2b50\u2b50\u2b50
+2025-12-10 10:15:07,666 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\boxplot_HuongBanCong_anova.png
+2025-12-10 10:15:07,683 [src.visualization] [INFO] CanGoc               | 307.28     | < 0.001         | \u2b50\u2b50\u2b50
+2025-12-10 10:15:07,952 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\boxplot_CanGoc_anova.png
+2025-12-10 10:15:07,970 [src.visualization] [INFO] TinhTrangBDS         | 967.86     | < 0.001         | \u2b50\u2b50\u2b50
+2025-12-10 10:15:08,243 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\boxplot_TinhTrangBDS_anova.png
+2025-12-10 10:15:08,250 [src.visualization] [INFO] 
+=== B\u1eaeT \u0110\u1ea6U KI\u1ec2M \u0110\u1ecaNH GI\u1ea2 THUY\u1ebeT (HYPOTHESIS TESTING) ===
+2025-12-10 10:15:08,250 [src.visualization] [INFO] 
+--- KI\u1ec2M \u0110\u1ecaNH GI\u1ea2 THUY\u1ebeT: C\u0102N GÓC vs. C\u0102N TH\u01af\u1edcNG (MISSING) ---
+2025-12-10 10:15:08,262 [src.visualization] [INFO] T\u1ef7 l\u1ec7 phân b\u1ed1: KX\u0110 chi\u1ebfm 79.16% (Th\u1ecb tr\u01b0\u1eddng: C\u0103n th\u01b0\u1eddng chi\u1ebfm ~75-85%)
+2025-12-10 10:15:08,268 [src.visualization] [INFO] Median Log(Gia) [Ph\u1ea3i]: 1.24
+2025-12-10 10:15:08,268 [src.visualization] [INFO] Median Log(Gia) [KX\u0110] : 1.16
+2025-12-10 10:15:08,268 [src.visualization] [INFO] Chênh l\u1ec7ch giá (Premium Gap): +11.4%
+2025-12-10 10:15:08,269 [src.visualization] [INFO] P-value (T-test): 0.00000
+2025-12-10 10:15:08,269 [src.visualization] [INFO] => K\u1ebeT LU\u1eacN: XÁC NH\u1eacN! 'KX\u0110' chính là 'C\u0103n th\u01b0\u1eddng'. (Có ý ngh\u0129a th\u1ed1ng kê)
+2025-12-10 10:15:08,550 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\hypothesis_CanGoc.png
+2025-12-10 10:15:08,563 [src.visualization] [INFO] 
+--- KI\u1ec2M \u0110\u1ecaNH GI\u1ea2 THUY\u1ebeT: H\u01af\u1edaNG BAN CÔNG (PREMIUM CHECK) ---
+2025-12-10 10:15:08,570 [src.visualization] [INFO] Các h\u01b0\u1edbng hi\u1ec7n có: ['Khác' ' \u0110ông Nam' ' Tây B\u1eafc' ' B\u1eafc' ' Tây Nam' ' \u0110ông' ' \u0110ông B\u1eafc'
+ ' Nam' ' Tây']
+2025-12-10 10:15:08,578 [src.visualization] [INFO] S\u1ed1 l\u01b0\u1ee3ng m\u1eabu: Premium (Mát)=3204 | Baseline (N\u1eafng)=3372
+2025-12-10 10:15:08,579 [src.visualization] [INFO] Mean Log(Gia) [Mát] : 1.1809
+2025-12-10 10:15:08,579 [src.visualization] [INFO] Mean Log(Gia) [N\u1eafng]: 1.2795
+2025-12-10 10:15:08,579 [src.visualization] [INFO] P-value: 1.00000
+2025-12-10 10:15:08,579 [src.visualization] [INFO] => K\u1ebeT LU\u1eacN: CH\u1ea4P NH\u1eacN H0. Không \u0111\u1ee7 b\u1eb1ng ch\u1ee9ng v\u1ec1 chênh l\u1ec7ch giá.
+2025-12-10 10:15:08,843 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\hypothesis_HuongBanCong.png
+2025-12-10 10:15:08,852 [src.visualization] [INFO] 
+PIPELINE HOÀN T\u1ea4T. Vui lòng ki\u1ec3m tra th\u01b0 m\u1ee5c 'report/'.
+2025-12-10 10:15:08,853 [MainPipeline] [INFO] >> EDA hoàn t\u1ea5t. Các bi\u1ec3u \u0111\u1ed3 \u0111ã \u0111\u01b0\u1ee3c l\u01b0u.
+2025-12-10 10:15:08,853 [MainPipeline] [INFO] >> [Giai \u0111o\u1ea1n 7] Chu\u1ea9n b\u1ecb d\u1eef li\u1ec7u cho Model
+2025-12-10 10:15:08,853 [MainPipeline] [INFO] >> C\u1eadp nh\u1eadt Target: S\u1eed d\u1ee5ng Log_Gia thay cho Gia g\u1ed1c.
+2025-12-10 10:15:08,941 [MainPipeline] [INFO] >> [SAVE] L\u01b0u file d\u1eef li\u1ec7u (Unscaled) cho Model: data/processed/df_model_ready.csv
+2025-12-10 10:15:09,102 [MainPipeline] [INFO] \u0110ã l\u01b0u d\u1eef li\u1ec7u xu\u1ed1ng: data/processed/df_model_ready.csv
+2025-12-10 10:15:09,103 [MainPipeline] [INFO] 
+=== B\u1eaeT \u0110\u1ea6U QUY TRÌNH HU\u1ea4N LUY\u1ec6N MODEL ===
+2025-12-10 10:15:09,104 [MainPipeline] [INFO] ===== ModelTrainer kh\u1edfi t\u1ea1o thành công =====
+2025-12-10 10:15:09,228 [MainPipeline] [INFO] \u0110ã load data t\u1eeb data/processed/df_model_ready.csv v\u1edbi shape (22502, 28)
+2025-12-10 10:15:09,232 [MainPipeline] [INFO] \u0110ã chia train/test: Train=(18001, 27), Test=(4501, 27)
+2025-12-10 10:15:09,232 [MainPipeline] [INFO] \u0110ang th\u1ef1c hi\u1ec7n Scaling (MinMax) trên các c\u1ed9t: ['DienTich_m2', 'PhongNgu', 'PhongTam', 'TongPhong', 'DienTich_per_Phong', 'TyLe_Ngu_Tam']
+2025-12-10 10:15:09,238 [MainPipeline] [INFO] \u0110ã l\u01b0u Scaler t\u1ea1i: models/saved_models\scaler.joblib
+2025-12-10 10:15:09,238 [MainPipeline] [INFO] ============================================================
+2025-12-10 10:15:09,238 [MainPipeline] [INFO] T\u1ed1i \u01b0u siêu tham s\u1ed1 cho model: RandomForest
+2025-12-10 10:15:09,239 [MainPipeline] [INFO] -> Ch\u1ea1y Search v\u1edbi n_iter=20, cv=5
+2025-12-10 10:15:35,279 [MainPipeline] [INFO] Best params cho RandomForest: {'n_estimators': 300, 'min_samples_split': 5, 'min_samples_leaf': 4, 'max_features': 'sqrt', 'max_depth': 20}
+2025-12-10 10:15:35,492 [MainPipeline] [INFO] [RandomForest] TRAIN: R2=0.6428, RMSE=0.2313 | TEST: R2=0.5513, RMSE=0.2587
+2025-12-10 10:15:35,573 [MainPipeline] [INFO] \u0110ã l\u01b0u model [RandomForest] vào: models/saved_models\RandomForest_best_model.joblib
+2025-12-10 10:15:35,573 [MainPipeline] [INFO] ============================================================
+2025-12-10 10:15:35,573 [MainPipeline] [INFO] T\u1ed1i \u01b0u siêu tham s\u1ed1 cho model: XGBoost
+2025-12-10 10:15:35,574 [MainPipeline] [INFO] -> Ch\u1ea1y Search v\u1edbi n_iter=20, cv=5
+2025-12-10 10:15:53,489 [MainPipeline] [INFO] Best params cho XGBoost: {'subsample': 0.7, 'reg_lambda': 10.0, 'reg_alpha': 0.1, 'n_estimators': 1500, 'max_depth': 6, 'learning_rate': 0.02, 'colsample_bytree': 0.7}
+2025-12-10 10:15:53,588 [MainPipeline] [INFO] [XGBoost] TRAIN: R2=0.6685, RMSE=0.2228 | TEST: R2=0.5510, RMSE=0.2588
+2025-12-10 10:15:53,628 [MainPipeline] [INFO] \u0110ã l\u01b0u model [XGBoost] vào: models/saved_models\XGBoost_best_model.joblib
+2025-12-10 10:15:53,629 [MainPipeline] [INFO] ============================================================
+2025-12-10 10:15:53,629 [MainPipeline] [INFO] T\u1ed1i \u01b0u siêu tham s\u1ed1 cho model: SVR
+2025-12-10 10:15:53,629 [MainPipeline] [INFO] -> Ch\u1ea1y Search v\u1edbi n_iter=20, cv=5
+2025-12-10 10:16:56,695 [MainPipeline] [INFO] Best params cho SVR: {'epsilon': 0.1, 'C': 0.01}
+2025-12-10 10:16:59,959 [MainPipeline] [INFO] [SVR] TRAIN: R2=0.4601, RMSE=0.2844 | TEST: R2=0.4619, RMSE=0.2833
+2025-12-10 10:16:59,963 [MainPipeline] [INFO] \u0110ã l\u01b0u model [SVR] vào: models/saved_models\SVR_best_model.joblib
+2025-12-10 10:16:59,963 [MainPipeline] [INFO] ============================================================
+2025-12-10 10:16:59,964 [MainPipeline] [INFO] \u0110ang hu\u1ea5n luy\u1ec7n Voting Regressor t\u1eeb: ['RandomForest', 'XGBoost']...
+2025-12-10 10:17:02,489 [MainPipeline] [INFO] [Voting_Ensemble] TRAIN: R2=0.6610, RMSE=0.2253 | TEST: R2=0.5567, RMSE=0.2571
+2025-12-10 10:17:02,737 [MainPipeline] [INFO] \u0110ã l\u01b0u model [Voting_Ensemble] vào: models/saved_models\Voting_Ensemble_best_model.joblib
+2025-12-10 10:17:02,741 [MainPipeline] [INFO] \u0110ã l\u01b0u b\u1ea3ng k\u1ebft qu\u1ea3 vào: models/metrics\model_results_summary.csv
+2025-12-10 10:17:02,741 [MainPipeline] [INFO] \u0110ã l\u01b0u b\u1ea3ng k\u1ebft qu\u1ea3 JSON vào: models/metrics\model_results_summary.json
+2025-12-10 10:17:02,987 [MainPipeline] [INFO] Mô hình t\u1ed1t nh\u1ea5t theo RMSE: Voting_Ensemble. \u0110ã l\u01b0u vào: models/saved_models\best_overall_model.joblib
+2025-12-10 10:17:03,225 [MainPipeline] [INFO] \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3 RMSE: reports/figures\rmse_comparison.png
+2025-12-10 10:17:03,462 [MainPipeline] [INFO] \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3 MAE: reports/figures\mae_comparison.png
+2025-12-10 10:17:03,464 [MainPipeline] [INFO] Mô hình t\u1ed1t nh\u1ea5t: Voting_Ensemble
+2025-12-10 10:17:03,465 [MainPipeline] [INFO] 
+=============================================
+2025-12-10 10:17:03,465 [MainPipeline] [INFO]    B\u1eaeT \u0110\u1ea6U PHÂN TÍCH K\u1ebeT QU\u1ea2 MÔ HÌNH
+2025-12-10 10:17:03,465 [MainPipeline] [INFO] =============================================
+2025-12-10 10:17:03,466 [MainPipeline] [INFO] >> \u0110ang phân tích model: RandomForest
+2025-12-10 10:17:03,466 [src.visualization] [INFO] === B\u1eaeT \u0110\u1ea6U PHÂN TÍCH MÔ HÌNH (MODEL ANALYSIS) ===
+2025-12-10 10:17:03,610 [src.visualization] [INFO] 
+--- \u0110ANG V\u1ebc BI\u1ec2U \u0110\u1ed2 ACTUAL vs PREDICTED (RandomForest) ---
+2025-12-10 10:17:04,129 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\model_actual_vs_predicted_RandomForest.png
+2025-12-10 10:17:04,140 [src.visualization] [INFO] 
+--- \u0110ANG V\u1ebc BI\u1ec2U \u0110\u1ed2 RESIDUALS (RandomForest) ---
+2025-12-10 10:17:04,892 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\model_residuals_RandomForest.png
+2025-12-10 10:17:04,908 [src.visualization] [INFO] 
+--- \u0110ANG V\u1ebc FEATURE IMPORTANCE (RandomForest) ---
+2025-12-10 10:17:05,563 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\model_feature_importance_RandomForest.png
+2025-12-10 10:17:05,579 [src.visualization] [INFO] === HOÀN T\u1ea4T PHÂN TÍCH MÔ HÌNH ===
+2025-12-10 10:17:05,675 [src.visualization] [INFO] 
+--- \u0110ANG V\u1ebc FEATURE IMPORTANCE (RandomForest) ---
+2025-12-10 10:17:06,432 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\model_feature_importance_RandomForest.png
+2025-12-10 10:17:06,445 [MainPipeline] [INFO] >> \u0110ang phân tích model: XGBoost
+2025-12-10 10:17:06,445 [src.visualization] [INFO] === B\u1eaeT \u0110\u1ea6U PHÂN TÍCH MÔ HÌNH (MODEL ANALYSIS) ===
+2025-12-10 10:17:06,475 [src.visualization] [INFO] 
+--- \u0110ANG V\u1ebc BI\u1ec2U \u0110\u1ed2 ACTUAL vs PREDICTED (XGBoost) ---
+2025-12-10 10:17:06,973 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\model_actual_vs_predicted_XGBoost.png
+2025-12-10 10:17:06,984 [src.visualization] [INFO] 
+--- \u0110ANG V\u1ebc BI\u1ec2U \u0110\u1ed2 RESIDUALS (XGBoost) ---
+2025-12-10 10:17:07,647 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\model_residuals_XGBoost.png
+2025-12-10 10:17:07,654 [src.visualization] [INFO] 
+--- \u0110ANG V\u1ebc FEATURE IMPORTANCE (XGBoost) ---
+2025-12-10 10:17:08,163 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\model_feature_importance_XGBoost.png
+2025-12-10 10:17:08,186 [src.visualization] [INFO] === HOÀN T\u1ea4T PHÂN TÍCH MÔ HÌNH ===
+2025-12-10 10:17:08,190 [src.visualization] [INFO] 
+--- \u0110ANG V\u1ebc FEATURE IMPORTANCE (XGBoost) ---
+2025-12-10 10:17:08,747 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\model_feature_importance_XGBoost.png
+2025-12-10 10:17:08,754 [MainPipeline] [INFO] >> \u0110ang phân tích model: SVR
+2025-12-10 10:17:08,754 [src.visualization] [INFO] === B\u1eaeT \u0110\u1ea6U PHÂN TÍCH MÔ HÌNH (MODEL ANALYSIS) ===
+2025-12-10 10:17:09,520 [src.visualization] [INFO] 
+--- \u0110ANG V\u1ebc BI\u1ec2U \u0110\u1ed2 ACTUAL vs PREDICTED (SVR) ---
+2025-12-10 10:17:09,939 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\model_actual_vs_predicted_SVR.png
+2025-12-10 10:17:09,946 [src.visualization] [INFO] 
+--- \u0110ANG V\u1ebc BI\u1ec2U \u0110\u1ed2 RESIDUALS (SVR) ---
+2025-12-10 10:17:10,705 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\model_residuals_SVR.png
+2025-12-10 10:17:10,718 [src.visualization] [INFO] 
+--- \u0110ANG V\u1ebc FEATURE IMPORTANCE (SVR) ---
+2025-12-10 10:17:10,719 [src.visualization] [WARNING] Model SVR không h\u1ed7 tr\u1ee3 feature_importances_.
+2025-12-10 10:17:10,719 [src.visualization] [INFO] === HOÀN T\u1ea4T PHÂN TÍCH MÔ HÌNH ===
+2025-12-10 10:17:10,719 [MainPipeline] [INFO] Model SVR không có feature_importances_. Chuy\u1ec3n sang dùng Permutation Importance.
+2025-12-10 10:17:10,719 [src.visualization] [INFO] 
+--- \u0110ANG TÍNH PERMUTATION IMPORTANCE CHO SVR (S\u1ebd h\u01a1i lâu xíu...) ---
+2025-12-10 10:17:44,196 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\model_permutation_importance_SVR.png
+2025-12-10 10:17:44,205 [MainPipeline] [INFO] >> \u0110ang phân tích model: Voting_Ensemble
+2025-12-10 10:17:44,206 [src.visualization] [INFO] === B\u1eaeT \u0110\u1ea6U PHÂN TÍCH MÔ HÌNH (MODEL ANALYSIS) ===
+2025-12-10 10:17:44,386 [src.visualization] [INFO] 
+--- \u0110ANG V\u1ebc BI\u1ec2U \u0110\u1ed2 ACTUAL vs PREDICTED (Voting_Ensemble) ---
+2025-12-10 10:17:44,932 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\model_actual_vs_predicted_Voting_Ensemble.png
+2025-12-10 10:17:44,941 [src.visualization] [INFO] 
+--- \u0110ANG V\u1ebc BI\u1ec2U \u0110\u1ed2 RESIDUALS (Voting_Ensemble) ---
+2025-12-10 10:17:45,609 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\model_residuals_Voting_Ensemble.png
+2025-12-10 10:17:45,616 [src.visualization] [INFO] 
+--- \u0110ANG V\u1ebc FEATURE IMPORTANCE (Voting_Ensemble) ---
+2025-12-10 10:17:45,616 [src.visualization] [WARNING] Model Voting_Ensemble không h\u1ed7 tr\u1ee3 feature_importances_.
+2025-12-10 10:17:45,616 [src.visualization] [INFO] === HOÀN T\u1ea4T PHÂN TÍCH MÔ HÌNH ===
+2025-12-10 10:17:45,616 [MainPipeline] [INFO] Model Voting_Ensemble không có feature_importances_. Chuy\u1ec3n sang dùng Permutation Importance.
+2025-12-10 10:17:45,616 [src.visualization] [INFO] 
+--- \u0110ANG TÍNH PERMUTATION IMPORTANCE CHO Voting_Ensemble (S\u1ebd h\u01a1i lâu xíu...) ---
+2025-12-10 10:18:03,581 [src.visualization] [INFO] >> \u0110ã l\u01b0u bi\u1ec3u \u0111\u1ed3: reports/figures\model_permutation_importance_Voting_Ensemble.png
+2025-12-10 10:18:03,589 [MainPipeline] [INFO] >> Model Analysis hoàn t\u1ea5t.
+2025-12-10 10:18:03,589 [MainPipeline] [INFO] === PIPELINE K\u1ebeT THÚC THÀNH CÔNG ===
