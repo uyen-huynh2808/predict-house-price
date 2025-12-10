@@ -53,7 +53,7 @@ FINAL_PROJECT_DS_K23/
 Tải source code về máy:
 
 ```bash
-git clone https://github.com/uyen-huynh2808/predict-house-price
+git clone https://github.com/uyen-huynh2808/predict-house-price FINAL_PROJECT_DS_K23
 cd FINAL_PROJECT_DS_K23
 ```
 
