@@ -8,25 +8,37 @@ Pipeline bao gồm các module độc lập: Xử lý Dữ liệu Thô, Kỹ thu
 
 Cấu trúc thư mục được tổ chức theo chuẩn MDI (Modular Design for Intelligence) để đảm bảo tính module hóa, dễ bảo trì và khả năng tái lập.
 
-| Thư mục/File | Chức năng | Nội dung Lưu trữ/Chứa đựng |
-| :--- | :--- | :--- |
-| **`main.py`** | **Lõi Điều Phối (Orchestrator)** | File chạy chính, điều khiển luồng dữ liệu giữa tất cả các module. |
-| **`requirements.txt`** | **Quản lý Phụ thuộc** | Danh sách tất cả các thư viện Python cần thiết (`pandas`, `scikit-learn`, `xgboost`, `pyyaml`...). |
-| **`config/`** | **Quản lý Cấu hình** | Chứa `config.yaml` – Nguồn sự thật duy nhất cho toàn bộ tham số (đường dẫn, hyperparameters, random seed). |
-| **`data/`** | **Quản lý Dữ liệu** | Phân tách dữ liệu theo giai đoạn xử lý. |
-| ├── `raw/rawdata.csv` | **Dữ liệu Thô** | Dữ liệu đầu vào ban đầu (đã có sẵn trong Repo). |
-| └── `processed/` | **Dữ liệu Sạch** | Chứa `df_model_ready.csv` (dữ liệu đã xử lý, sẵn sàng cho Model) và `EDA_data.csv` (bản dùng cho trực quan hóa). |
-| **`logs/`** | **Ghi Nhật ký** | Chứa `full_pipeline.log` – File log ghi lại chi tiết quá trình chạy, thông báo, cảnh báo lỗi. |
-| **`models/`** | **Lưu trữ Kết quả & Mô hình** | Tổng hợp output của giai đoạn Training. |
-| ├── `saved_models/` | **Mô hình Tuần tự hóa** | Chứa các file `.joblib` (mô hình đã huấn luyện: `Voting_Ensemble.joblib`, `scaler.joblib`,...). |
-| └── `metrics/` | **Kết quả Định lượng** | Chứa `model_results_summary.csv/.json` (bảng tổng hợp RMSE, R2, MAE của các mô hình). |
-| **`reports/`** | **Báo cáo và Hình ảnh** | Kết quả trình bày cuối cùng. |
-| └── `figures/` | **Biểu đồ Tự động Sinh** | Lưu trữ các biểu đồ so sánh hiệu năng, Residuals, và Feature Importance. |
-| **`src/`** | **SOURCE CODE CHÍNH (Modules OOP)** | Thư mục chứa các Class nghiệp vụ cốt lõi. |
-| ├── `preprocessor.py` | **Data Preprocessing** | Chứa các Class xử lý Tiền xử lý, Imputation, Lọc ngoại lai và Feature Engineering. |
-| ├── `model_trainer.py` | **Model Training & Tuning** | Class quản lý toàn bộ quy trình huấn luyện, tối ưu tham số và đánh giá mô hình. |
-| ├── `visualization.py` | **Trực quan hóa** | Các hàm hỗ trợ vẽ biểu đồ EDA chuyên sâu và phân tích kết quả mô hình. |
-| └── `utils.py` | **Tiện ích Nền tảng** | Các hàm thiết yếu (`load_config`, `set_seed`, `setup_logger`). |
+``` text
+FINAL_PROJECT_DS_K23/
+│
+├── main.py             # Lõi Điều Phối (Orchestrator): File chạy chính, điều khiển luồng dữ liệu giữa tất cả các module.
+├── requirements.txt    # Quản lý Phụ thuộc: Danh sách các thư viện Python cần thiết.
+│
+├── config/             # Quản lý Cấu hình
+│   └── config.yaml     # Chứa tất cả tham số (paths, hyperparameters, random seed).
+│
+├── data/               # Quản lý Dữ liệu
+│   ├── raw/            # Dữ liệu Thô
+│   │   └── rawdata.csv # Dữ liệu đầu vào ban đầu (đã có sẵn trong Repo).
+│   └── processed/      # Dữ liệu Sạch
+│       └── df_model_ready.csv, EDA_data.csv # Dữ liệu sau xử lý, sẵn sàng cho Model và Visualization.
+│
+├── logs/               # Ghi Nhật ký
+│   └── full_pipeline.log # File log ghi lại chi tiết quá trình chạy.
+│
+├── models/             # Lưu trữ Kết quả & Mô hình
+│   ├── saved_models/   # Mô hình Tuần tự hóa (.joblib: Voting_Ensemble, scaler...).
+│   └── metrics/        # Kết quả Định lượng (model_results_summary.csv/.json: bảng tổng hợp RMSE, R2, MAE của các mô hình).
+│
+├── reports/            # Báo cáo và Hình ảnh
+│   └── figures/        # Biểu đồ Tự động Sinh (so sánh hiệu năng, Residuals, Feature Importance).
+│
+└── src/                # SOURCE CODE CHÍNH (Modules OOP)
+     ├── preprocessor.py  # Data Preprocessing: Chứa các Class xử lý Tiền xử lý, Imputation, Lọc ngoại lai và Feature Engineering.
+     ├── model_trainer.py # Model Training & Tuning: Class quản lý toàn bộ quy trình huấn luyện, tối ưu tham số và đánh giá mô hình.
+     ├── visualization.py # Trực quan hóa: Các hàm hỗ trợ vẽ biểu đồ EDA chuyên sâu và phân tích kết quả mô hình.
+     └── utils.py         # Tiện ích Nền tảng: Các hàm thiết yếu (load_config, set_seed, setup_logger).
+```
 
 ## Hướng Dẫn Cài Đặt và Chạy
 
