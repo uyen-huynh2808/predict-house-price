@@ -1,0 +1,407 @@
+2025-12-10 10:56:45 [MainPipeline] [INFO] === BẮT ĐẦU QUY TRÌNH XỬ LÝ DỮ LIỆU (OOP PIPELINE) ===
+2025-12-10 10:56:45 [MainPipeline] [INFO] Đã đọc dữ liệu từ data/raw/rawdata.csv - Shape: (24949, 16)
+2025-12-10 10:56:45 [MainPipeline] [INFO] Trích xuất đặc trưng BĐS (Đơn vị đích: triệu)...
+2025-12-10 10:56:45 [MainPipeline] [INFO] Đã clean diện tích: DienTich
+2025-12-10 10:56:46 [MainPipeline] [INFO] Đã clean giá: Gia
+2025-12-10 10:56:46 [MainPipeline] [INFO] Đã trích xuất Quận/Huyện từ: DiaChi
+2025-12-10 10:56:46 [MainPipeline] [INFO] >> [Giai đoạn 1] Làm sạch cấu trúc & Xóa cột rác
+2025-12-10 10:56:46 [MainPipeline] [INFO] Đã xóa cột: ['MaCanHo', 'TenPhanKhu']
+2025-12-10 10:56:46 [MainPipeline] [INFO] Đã đổi tên cột: {'Phongngu': 'PhongNgu'}
+2025-12-10 10:56:46 [MainPipeline] [INFO] >> [Giai đoạn 2] Trích xuất thông tin từ dữ liệu thô
+2025-12-10 10:56:46 [MainPipeline] [INFO] Trích xuất đặc trưng BĐS (Đơn vị đích: tỷ)...
+2025-12-10 10:56:46 [MainPipeline] [INFO] Đã clean diện tích: DienTich
+2025-12-10 10:56:46 [MainPipeline] [INFO] Đã clean giá: Gia
+2025-12-10 10:56:47 [MainPipeline] [INFO] Đã trích xuất Quận/Huyện từ: DiaChi
+2025-12-10 10:56:47 [MainPipeline] [INFO] Đã đổi tên cột: {'Quan_Huyen': 'Quan', 'Gia_Clean': 'Gia_Ty', 'DienTich_Clean': 'DienTich_m2'}
+2025-12-10 10:56:47 [MainPipeline] [INFO] Đã xóa cột: ['DiaChi']
+2025-12-10 10:56:47 [MainPipeline] [INFO] Đã trích xuất số liệu phòng cho cột: PhongNgu
+2025-12-10 10:56:47 [MainPipeline] [INFO] Đã trích xuất số liệu phòng cho cột: PhongTam
+2025-12-10 10:56:47 [MainPipeline] [INFO] Đã chuẩn hóa nhị phân cột DacDiem (NaN=KXĐ)
+2025-12-10 10:56:47 [MainPipeline] [INFO] Đã đổi tên cột: {'DacDiem': 'CanGoc'}
+2025-12-10 10:56:47 [MainPipeline] [INFO] >> [Giai đoạn 3] Xử lý dữ liệu thiếu
+2025-12-10 10:56:47 [MainPipeline] [INFO] Bắt đầu xử lý Missing Values...
+2025-12-10 10:56:47 [MainPipeline] [INFO] Col 'TinhTrangBDS': Đã xử lý missing bằng chiến lược 'mode'.
+2025-12-10 10:56:47 [MainPipeline] [INFO] Col 'Loai': Đã xử lý missing bằng chiến lược 'mode'.
+2025-12-10 10:56:47 [MainPipeline] [INFO] Col 'PhongNgu': Đã xử lý missing bằng chiến lược 'mode'.
+2025-12-10 10:56:47 [MainPipeline] [INFO] Col 'PhongTam': Đã xử lý missing bằng chiến lược 'mode'.
+2025-12-10 10:56:47 [MainPipeline] [INFO] Bắt đầu xử lý Missing Values...
+2025-12-10 10:56:47 [MainPipeline] [INFO] Col 'TinhTrangNoiThat': Đã xử lý missing bằng chiến lược 'constant'.
+2025-12-10 10:56:47 [MainPipeline] [INFO] Bắt đầu xử lý Missing Values...
+2025-12-10 10:56:47 [MainPipeline] [INFO] Col 'GiayTo': Đã xử lý missing bằng chiến lược 'constant'.
+2025-12-10 10:56:47 [MainPipeline] [INFO] Bắt đầu xử lý Missing Values...
+2025-12-10 10:56:47 [MainPipeline] [INFO] Col 'HuongCuaChinh': Đã xử lý missing bằng chiến lược 'constant'.
+2025-12-10 10:56:47 [MainPipeline] [INFO] Col 'HuongBanCong': Đã xử lý missing bằng chiến lược 'constant'.
+2025-12-10 10:56:47 [MainPipeline] [INFO] >> [Giai đoạn 4] Chuẩn hóa dữ liệu phân loại
+2025-12-10 10:56:47 [MainPipeline] [INFO] Đã map dữ liệu cột TinhTrangNoiThat -> TinhTrangNoiThat.
+2025-12-10 10:56:47 [MainPipeline] [INFO] Đã chuẩn hóa loại BĐS: Loai -> Loai
+2025-12-10 10:56:47 [MainPipeline] [INFO] >> [Giai đoạn 5] Logic nghiệp vụ & Kiểm tra chéo
+2025-12-10 10:56:47 [MainPipeline] [INFO] Kiểm tra chéo: Dữ liệu hợp lý.
+2025-12-10 10:56:47 [MainPipeline] [INFO] Lọc diện tích ngoại lai (30 - 110 m2)...
+2025-12-10 10:56:47 [MainPipeline] [INFO] >> [Giai đoạn 6] Lọc ngoại lai thống kê (IQR)
+2025-12-10 10:56:47 [MainPipeline] [INFO] Xử lý ngoại lai (Method: iqr, Action: remove)...
+2025-12-10 10:56:47 [MainPipeline] [INFO] Col 'DonGia_m2': Đã xóa 680 dòng ngoại lai.
+2025-12-10 10:56:47 [MainPipeline] [INFO] >> [Feature Engineering] Tạo biến tương tác
+2025-12-10 10:56:47 [MainPipeline] [INFO] >> [Optimization] Áp dụng Log Transform cho cột Target
+2025-12-10 10:56:47 [MainPipeline] [INFO] >> [SAVE] Lưu file dữ liệu sạch cho EDA: data/processed/EDA_data.csv
+2025-12-10 10:56:48 [MainPipeline] [INFO] Đã lưu dữ liệu xuống: data/processed/EDA_data.csv
+2025-12-10 10:56:48 [MainPipeline] [INFO] >> Đã xóa cột 'Gia_m2' khỏi tập dữ liệu Train để chống Leakage.
+2025-12-10 10:56:48 [MainPipeline] [INFO] 
+=============================================
+2025-12-10 10:56:48 [MainPipeline] [INFO]    BẮT ĐẦU VISUALIZATION (EDA PHASE)
+2025-12-10 10:56:48 [MainPipeline] [INFO] =============================================
+2025-12-10 10:57:37 [MainPipeline] [INFO] >> EDA hoàn tất. Các biểu đồ đã được lưu.
+2025-12-10 10:57:37 [MainPipeline] [INFO] >> [Giai đoạn 7] Chuẩn bị dữ liệu cho Model
+2025-12-10 10:57:37 [MainPipeline] [INFO] >> Cập nhật Target: Sử dụng Log_Gia thay cho Gia gốc.
+2025-12-10 10:57:38 [MainPipeline] [INFO] >> [SAVE] Lưu file dữ liệu (Unscaled) cho Model: data/processed/df_model_ready.csv
+2025-12-10 10:57:38 [MainPipeline] [INFO] Đã lưu dữ liệu xuống: data/processed/df_model_ready.csv
+2025-12-10 10:57:38 [MainPipeline] [INFO] 
+=== BẮT ĐẦU QUY TRÌNH HUẤN LUYỆN MODEL ===
+2025-12-10 10:57:38 [MainPipeline] [INFO] ===== ModelTrainer khởi tạo thành công =====
+2025-12-10 10:57:38 [MainPipeline] [INFO] Đã load data từ data/processed/df_model_ready.csv với shape (22502, 28)
+2025-12-10 10:57:38 [MainPipeline] [INFO] Đã chia train/test: Train=(18001, 27), Test=(4501, 27)
+2025-12-10 10:57:38 [MainPipeline] [INFO] Đang thực hiện Scaling (MinMax) trên các cột: ['DienTich_m2', 'PhongNgu', 'PhongTam', 'TongPhong', 'DienTich_per_Phong', 'TyLe_Ngu_Tam']
+2025-12-10 10:57:38 [MainPipeline] [INFO] Đã lưu Scaler tại: models/saved_models\scaler.joblib
+2025-12-10 10:57:38 [MainPipeline] [INFO] ============================================================
+2025-12-10 10:57:38 [MainPipeline] [INFO] Tối ưu siêu tham số cho model: RandomForest
+2025-12-10 10:57:38 [MainPipeline] [INFO] -> Chạy Search với n_iter=20, cv=5
+2025-12-10 10:58:50 [MainPipeline] [INFO] Best params cho RandomForest: {'n_estimators': 300, 'min_samples_split': 5, 'min_samples_leaf': 4, 'max_features': 'sqrt', 'max_depth': 20}
+2025-12-10 10:58:51 [MainPipeline] [INFO] [RandomForest] TRAIN: R2=0.6428, RMSE=0.2313 | TEST: R2=0.5513, RMSE=0.2587
+2025-12-10 10:58:51 [MainPipeline] [INFO] Đã lưu model [RandomForest] vào: models/saved_models\RandomForest_best_model.joblib
+2025-12-10 10:58:51 [MainPipeline] [INFO] ============================================================
+2025-12-10 10:58:51 [MainPipeline] [INFO] Tối ưu siêu tham số cho model: XGBoost
+2025-12-10 10:58:51 [MainPipeline] [INFO] -> Chạy Search với n_iter=20, cv=5
+2025-12-10 10:59:45 [MainPipeline] [INFO] Best params cho XGBoost: {'subsample': 0.7, 'reg_lambda': 10.0, 'reg_alpha': 0.1, 'n_estimators': 1500, 'max_depth': 6, 'learning_rate': 0.02, 'colsample_bytree': 0.7}
+2025-12-10 10:59:46 [MainPipeline] [INFO] [XGBoost] TRAIN: R2=0.6685, RMSE=0.2228 | TEST: R2=0.5510, RMSE=0.2588
+2025-12-10 10:59:46 [MainPipeline] [INFO] Đã lưu model [XGBoost] vào: models/saved_models\XGBoost_best_model.joblib
+2025-12-10 10:59:46 [MainPipeline] [INFO] ============================================================
+2025-12-10 10:59:46 [MainPipeline] [INFO] Tối ưu siêu tham số cho model: SVR
+2025-12-10 10:59:46 [MainPipeline] [INFO] -> Chạy Search với n_iter=20, cv=5
+2025-12-10 11:02:54 [MainPipeline] [INFO] Best params cho SVR: {'epsilon': 0.1, 'C': 0.01}
+2025-12-10 11:03:07 [MainPipeline] [INFO] [SVR] TRAIN: R2=0.4601, RMSE=0.2844 | TEST: R2=0.4619, RMSE=0.2833
+2025-12-10 11:03:07 [MainPipeline] [INFO] Đã lưu model [SVR] vào: models/saved_models\SVR_best_model.joblib
+2025-12-10 11:03:07 [MainPipeline] [INFO] ============================================================
+2025-12-10 11:03:07 [MainPipeline] [INFO] Đang huấn luyện Voting Regressor từ: ['RandomForest', 'XGBoost']...
+2025-12-10 11:03:15 [MainPipeline] [INFO] [Voting_Ensemble] TRAIN: R2=0.6610, RMSE=0.2253 | TEST: R2=0.5567, RMSE=0.2571
+2025-12-10 11:03:16 [MainPipeline] [INFO] Đã lưu model [Voting_Ensemble] vào: models/saved_models\Voting_Ensemble_best_model.joblib
+2025-12-10 11:03:16 [MainPipeline] [INFO] Đã lưu bảng kết quả vào: models/metrics\model_results_summary.csv
+2025-12-10 11:03:16 [MainPipeline] [INFO] Đã lưu bảng kết quả JSON vào: models/metrics\model_results_summary.json
+2025-12-10 11:03:16 [MainPipeline] [INFO] Mô hình tốt nhất theo RMSE: Voting_Ensemble. Đã lưu vào: models/saved_models\best_overall_model.joblib
+2025-12-10 11:03:17 [MainPipeline] [INFO] Đã lưu biểu đồ RMSE: reports/figures\rmse_comparison.png
+2025-12-10 11:03:18 [MainPipeline] [INFO] Đã lưu biểu đồ MAE: reports/figures\mae_comparison.png
+2025-12-10 11:03:18 [MainPipeline] [INFO] Mô hình tốt nhất: Voting_Ensemble
+2025-12-10 11:03:18 [MainPipeline] [INFO] 
+=============================================
+2025-12-10 11:03:18 [MainPipeline] [INFO]    BẮT ĐẦU PHÂN TÍCH KẾT QUẢ MÔ HÌNH
+2025-12-10 11:03:18 [MainPipeline] [INFO] =============================================
+2025-12-10 11:03:18 [MainPipeline] [INFO] >> Đang phân tích model: RandomForest
+2025-12-10 11:03:24 [MainPipeline] [INFO] >> Đang phân tích model: XGBoost
+2025-12-10 11:03:30 [MainPipeline] [INFO] >> Đang phân tích model: SVR
+2025-12-10 11:03:36 [MainPipeline] [INFO] Model SVR không có feature_importances_. Chuyển sang dùng Permutation Importance.
+2025-12-10 11:06:02 [MainPipeline] [INFO] >> Đang phân tích model: Voting_Ensemble
+2025-12-10 11:06:04 [MainPipeline] [INFO] Model Voting_Ensemble không có feature_importances_. Chuyển sang dùng Permutation Importance.
+2025-12-10 11:06:45 [MainPipeline] [INFO] >> Model Analysis hoàn tất.
+2025-12-10 11:06:45 [MainPipeline] [INFO] === PIPELINE KẾT THÚC THÀNH CÔNG ===
+gures\feature_PhongNgu_DT_per_PN.png
+2025-12-10 10:57:05,791 [src.visualization] [INFO] Đã xử lý Phòng ngủ: Clipped max 4 & Tạo biến DT_per_PN
+2025-12-10 10:57:05,798 [src.visualization] [INFO] Thống kê DT_per_PN:
+count    20741.000000
+mean        35.021843
+std          8.009752
+min         10.800000
+25%         30.000000
+50%         33.500000
+75%         37.500000
+max        104.000000
+Name: DT_per_PN, dtype: float64
+2025-12-10 10:57:05,806 [src.visualization] [INFO] 
+========== PHÂN TÍCH CỘT: PhongTam ==========
+2025-12-10 10:57:05,806 [src.visualization] [INFO] 1. Tổng quan:
+2025-12-10 10:57:05,806 [src.visualization] [INFO]    - Số lượng bản ghi: 20741
+2025-12-10 10:57:05,806 [src.visualization] [INFO]    - Missing Values: 0 (0.00%)
+2025-12-10 10:57:05,807 [src.visualization] [INFO]    - Zeros (Giá trị 0): 0 (0.00%)
+2025-12-10 10:57:05,807 [src.visualization] [INFO] 2. Xu hướng tập trung:
+2025-12-10 10:57:05,807 [src.visualization] [INFO]    - Mean: 1.72 phòng | Median: 2.00 phòng
+2025-12-10 10:57:05,808 [src.visualization] [INFO]    - Mode: 2.00 phòng
+2025-12-10 10:57:05,809 [src.visualization] [INFO] 3. Độ phân tán & Hình dáng:
+2025-12-10 10:57:05,809 [src.visualization] [INFO]    - Std: 0.47 | Min-Max: 1.00 - 6.00 phòng
+2025-12-10 10:57:05,809 [src.visualization] [INFO]    - Skewness: -0.5510 (Lệch trái)
+2025-12-10 10:57:05,809 [src.visualization] [INFO]    - Kurtosis: 0.2808
+2025-12-10 10:57:07,781 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\phan_phoi_PhongTam.png
+2025-12-10 10:57:07,797 [src.visualization] [INFO] Đã xử lý Phòng tắm: Clipped max 3
+2025-12-10 10:57:07,797 [src.visualization] [INFO] 
+--- BẮT ĐẦU PHÂN TÍCH BIẾN CATEGORICAL ---
+2025-12-10 10:57:07,799 [src.visualization] [INFO] 
+========== PHÂN TÍCH CỘT: TinhTrangBDS ==========
+2025-12-10 10:57:07,800 [src.visualization] [INFO] Số lượng giá trị duy nhất (Cardinality): 2
+2025-12-10 10:57:07,800 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:57:07,803 [src.visualization] [INFO]             Value  Count    Percent
+0     Đã bàn giao  16613  80.097392
+1   Chưa bàn giao   4128  19.902608
+2025-12-10 10:57:07,803 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:57:08,527 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\cat_TinhTrangBDS.png
+2025-12-10 10:57:08,554 [src.visualization] [INFO] 
+========== PHÂN TÍCH CỘT: Loai ==========
+2025-12-10 10:57:08,557 [src.visualization] [INFO] Số lượng giá trị duy nhất (Cardinality): 4
+2025-12-10 10:57:08,557 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:57:08,560 [src.visualization] [INFO]             Value  Count    Percent
+0   Loại Chung Cư  19800  95.463092
+1  Loại Văn Phòng    706   3.403886
+2  Loại Hạng Sang    206   0.993202
+3    Loại Tập Thể     29   0.139820
+2025-12-10 10:57:08,560 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:57:09,370 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\cat_Loai.png
+2025-12-10 10:57:09,401 [src.visualization] [INFO] 
+========== PHÂN TÍCH CỘT: GiayTo ==========
+2025-12-10 10:57:09,405 [src.visualization] [INFO] Số lượng giá trị duy nhất (Cardinality): 3
+2025-12-10 10:57:09,405 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:57:09,408 [src.visualization] [INFO]            Value  Count    Percent
+0    Đang chờ sổ   7157  34.506533
+1   Giấy tờ khác   6886  33.199942
+2       Đã có sổ   6698  32.293525
+2025-12-10 10:57:09,408 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:57:10,180 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\cat_GiayTo.png
+2025-12-10 10:57:10,214 [src.visualization] [INFO] 
+========== PHÂN TÍCH CỘT: TinhTrangNoiThat ==========
+2025-12-10 10:57:10,216 [src.visualization] [INFO] Số lượng giá trị duy nhất (Cardinality): 4
+2025-12-10 10:57:10,216 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:57:10,218 [src.visualization] [INFO]      Value  Count    Percent
+0      Thô  10485  50.552047
+1   Cơ bản   4137  19.946001
+2  Cao cấp   3217  15.510342
+3   Đầy đủ   2902  13.991611
+2025-12-10 10:57:10,218 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:57:10,944 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\cat_TinhTrangNoiThat.png
+2025-12-10 10:57:10,967 [src.visualization] [INFO] 
+========== PHÂN TÍCH CỘT: HuongCuaChinh ==========
+2025-12-10 10:57:10,970 [src.visualization] [INFO] Số lượng giá trị duy nhất (Cardinality): 9
+2025-12-10 10:57:10,971 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:57:10,974 [src.visualization] [INFO]        Value  Count    Percent
+0       Khác  12774  61.588159
+1   Đông Nam   1760   8.485608
+2        Nam   1332   6.422063
+3    Tây Bắc   1325   6.388313
+4   Đông Bắc   1115   5.375826
+5       Đông    772   3.722096
+6    Tây Nam    678   3.268888
+7        Tây    509   2.454076
+8        Bắc    476   2.294971
+2025-12-10 10:57:10,974 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:57:11,822 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\cat_HuongCuaChinh.png
+2025-12-10 10:57:11,841 [src.visualization] [INFO] 
+========== PHÂN TÍCH CỘT: HuongBanCong ==========
+2025-12-10 10:57:11,844 [src.visualization] [INFO] Số lượng giá trị duy nhất (Cardinality): 9
+2025-12-10 10:57:11,844 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:57:11,847 [src.visualization] [INFO]        Value  Count    Percent
+0       Khác  13225  63.762596
+1   Đông Nam   1732   8.350610
+2    Tây Nam   1017   4.903332
+3   Đông Bắc    940   4.532086
+4        Bắc    887   4.276554
+5       Đông    885   4.266911
+6    Tây Bắc    821   3.958343
+7        Tây    647   3.119425
+8        Nam    587   2.830143
+2025-12-10 10:57:11,847 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:57:12,679 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\cat_HuongBanCong.png
+2025-12-10 10:57:12,716 [src.visualization] [INFO] 
+========== PHÂN TÍCH CỘT: CanGoc ==========
+2025-12-10 10:57:12,721 [src.visualization] [INFO] Số lượng giá trị duy nhất (Cardinality): 2
+2025-12-10 10:57:12,721 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:57:12,723 [src.visualization] [INFO]   Value  Count    Percent
+0   KXĐ  16419  79.162046
+1  Phải   4322  20.837954
+2025-12-10 10:57:12,723 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:57:13,492 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\cat_CanGoc.png
+2025-12-10 10:57:13,517 [src.visualization] [INFO] 
+========== PHÂN TÍCH CỘT: Quan ==========
+2025-12-10 10:57:13,520 [src.visualization] [INFO] Số lượng giá trị duy nhất (Cardinality): 12
+2025-12-10 10:57:13,520 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:57:13,523 [src.visualization] [INFO]                 Value  Count    Percent
+0                Khác   7165  34.545104
+1   Thành phố Thủ Đức   5773  27.833759
+2       Quận Bình Tân   1860   8.967745
+3        Quận Tân Phú   1673   8.066149
+4        Huyện Nhà Bè    937   4.517622
+5     Quận Bình Thạnh    751   3.620848
+6       Quận Tân Bình    736   3.548527
+7    Huyện Bình Chánh    648   3.124247
+8      Quận Phú Nhuận    596   2.873536
+9         Quận Gò Vấp    565   2.724073
+10      Huyện Hóc Môn     33   0.159105
+11       Huyện Củ Chi      4   0.019285
+2025-12-10 10:57:13,523 [src.visualization] [INFO] ----------------------------------------
+2025-12-10 10:57:14,611 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\cat_Quan.png
+2025-12-10 10:57:14,631 [src.visualization] [INFO] 
+--- KIỂM TRA ĐA CỘNG TUYẾN (MULTICOLLINEARITY) ---
+2025-12-10 10:57:15,461 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\heatmap_correlation.png
+2025-12-10 10:57:15,487 [src.visualization] [INFO] Đang tính toán VIF...
+2025-12-10 10:57:15,531 [src.visualization] [INFO] 
+=== KẾT QUẢ VIF (VARIANCE INFLATION FACTOR) ===
+2025-12-10 10:57:15,532 [src.visualization] [INFO] Quy tắc: VIF > 5 (Cảnh báo), VIF > 10 (Nguy hiểm - Cần loại bỏ)
+2025-12-10 10:57:15,532 [src.visualization] [INFO] ------------------------------------------------------------
+2025-12-10 10:57:15,534 [src.visualization] [INFO]     Feature      VIF
+DienTich_m2 2.480254
+   PhongNgu 2.211549
+   PhongTam 1.726336
+     Gia_m2 1.047946
+2025-12-10 10:57:15,534 [src.visualization] [INFO] 
+--- PHÂN TÍCH TƯƠNG QUAN VỚI Log_Gia ---
+2025-12-10 10:57:15,545 [src.visualization] [INFO] HỆ SỐ TƯƠNG QUAN PEARSON (r):
+2025-12-10 10:57:15,546 [src.visualization] [INFO] Gia_m2_trieu        0.825732
+Log_Gia_m2_trieu    0.822920
+DienTich_m2         0.668733
+PhongNgu_Clipped    0.458001
+PhongTam_Clipped    0.341816
+DT_per_PN           0.132849
+2025-12-10 10:57:28,659 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\scatter_correlation_Log_Gia.png
+2025-12-10 10:57:28,671 [src.visualization] [INFO] 
+=== BÁO CÁO PHÂN TÍCH ANOVA (ONE-WAY) ===
+2025-12-10 10:57:28,671 [src.visualization] [INFO] Feature              | F-Score    | P-value         | Kết luận
+2025-12-10 10:57:28,671 [src.visualization] [INFO] ---------------------------------------------------------------------------
+2025-12-10 10:57:28,693 [src.visualization] [INFO] Quan                 | 427.56     | < 0.001         | ⭐⭐⭐
+2025-12-10 10:57:29,323 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\boxplot_Quan_anova.png
+2025-12-10 10:57:29,357 [src.visualization] [INFO] Loai                 | 221.44     | < 0.001         | ⭐⭐⭐
+2025-12-10 10:57:30,277 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\boxplot_Loai_anova.png
+2025-12-10 10:57:30,322 [src.visualization] [INFO] GiayTo               | 15.87      | < 0.001         | ⭐⭐⭐
+2025-12-10 10:57:31,104 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\boxplot_GiayTo_anova.png
+2025-12-10 10:57:31,150 [src.visualization] [INFO] TinhTrangNoiThat     | 409.76     | < 0.001         | ⭐⭐⭐
+2025-12-10 10:57:31,990 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\boxplot_TinhTrangNoiThat_anova.png
+2025-12-10 10:57:32,045 [src.visualization] [INFO] HuongCuaChinh        | 64.42      | < 0.001         | ⭐⭐⭐
+2025-12-10 10:57:33,088 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\boxplot_HuongCuaChinh_anova.png
+2025-12-10 10:57:33,131 [src.visualization] [INFO] HuongBanCong         | 44.81      | < 0.001         | ⭐⭐⭐
+2025-12-10 10:57:34,212 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\boxplot_HuongBanCong_anova.png
+2025-12-10 10:57:34,262 [src.visualization] [INFO] CanGoc               | 307.28     | < 0.001         | ⭐⭐⭐
+2025-12-10 10:57:35,132 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\boxplot_CanGoc_anova.png
+2025-12-10 10:57:35,178 [src.visualization] [INFO] TinhTrangBDS         | 967.86     | < 0.001         | ⭐⭐⭐
+2025-12-10 10:57:35,991 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\boxplot_TinhTrangBDS_anova.png
+2025-12-10 10:57:36,015 [src.visualization] [INFO] 
+=== BẮT ĐẦU KIỂM ĐỊNH GIẢ THUYẾT (HYPOTHESIS TESTING) ===
+2025-12-10 10:57:36,015 [src.visualization] [INFO] 
+--- KIỂM ĐỊNH GIẢ THUYẾT: CĂN GÓC vs. CĂN THƯỜNG (MISSING) ---
+2025-12-10 10:57:36,059 [src.visualization] [INFO] Tỷ lệ phân bố: KXĐ chiếm 79.16% (Thị trường: Căn thường chiếm ~75-85%)
+2025-12-10 10:57:36,083 [src.visualization] [INFO] Median Log(Gia) [Phải]: 1.24
+2025-12-10 10:57:36,084 [src.visualization] [INFO] Median Log(Gia) [KXĐ] : 1.16
+2025-12-10 10:57:36,084 [src.visualization] [INFO] Chênh lệch giá (Premium Gap): +11.4%
+2025-12-10 10:57:36,087 [src.visualization] [INFO] P-value (T-test): 0.00000
+2025-12-10 10:57:36,087 [src.visualization] [INFO] => KẾT LUẬN: XÁC NHẬN! 'KXĐ' chính là 'Căn thường'. (Có ý nghĩa thống kê)
+2025-12-10 10:57:36,911 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\hypothesis_CanGoc.png
+2025-12-10 10:57:36,932 [src.visualization] [INFO] 
+--- KIỂM ĐỊNH GIẢ THUYẾT: HƯỚNG BAN CÔNG (PREMIUM CHECK) ---
+2025-12-10 10:57:36,954 [src.visualization] [INFO] Các hướng hiện có: ['Khác' ' Đông Nam' ' Tây Bắc' ' Bắc' ' Tây Nam' ' Đông' ' Đông Bắc'
+ ' Nam' ' Tây']
+2025-12-10 10:57:36,980 [src.visualization] [INFO] Số lượng mẫu: Premium (Mát)=3204 | Baseline (Nắng)=3372
+2025-12-10 10:57:36,983 [src.visualization] [INFO] Mean Log(Gia) [Mát] : 1.1809
+2025-12-10 10:57:36,983 [src.visualization] [INFO] Mean Log(Gia) [Nắng]: 1.2795
+2025-12-10 10:57:36,983 [src.visualization] [INFO] P-value: 1.00000
+2025-12-10 10:57:36,983 [src.visualization] [INFO] => KẾT LUẬN: CHẤP NHẬN H0. Không đủ bằng chứng về chênh lệch giá.
+2025-12-10 10:57:37,705 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\hypothesis_HuongBanCong.png
+2025-12-10 10:57:37,726 [src.visualization] [INFO] 
+PIPELINE HOÀN TẤT. Vui lòng kiểm tra thư mục 'report/'.
+2025-12-10 10:57:37,727 [MainPipeline] [INFO] >> EDA hoàn tất. Các biểu đồ đã được lưu.
+2025-12-10 10:57:37,728 [MainPipeline] [INFO] >> [Giai đoạn 7] Chuẩn bị dữ liệu cho Model
+2025-12-10 10:57:37,729 [MainPipeline] [INFO] >> Cập nhật Target: Sử dụng Log_Gia thay cho Gia gốc.
+2025-12-10 10:57:38,019 [MainPipeline] [INFO] >> [SAVE] Lưu file dữ liệu (Unscaled) cho Model: data/processed/df_model_ready.csv
+2025-12-10 10:57:38,483 [MainPipeline] [INFO] Đã lưu dữ liệu xuống: data/processed/df_model_ready.csv
+2025-12-10 10:57:38,485 [MainPipeline] [INFO] 
+=== BẮT ĐẦU QUY TRÌNH HUẤN LUYỆN MODEL ===
+2025-12-10 10:57:38,488 [MainPipeline] [INFO] ===== ModelTrainer khởi tạo thành công =====
+2025-12-10 10:57:38,663 [MainPipeline] [INFO] Đã load data từ data/processed/df_model_ready.csv với shape (22502, 28)
+2025-12-10 10:57:38,678 [MainPipeline] [INFO] Đã chia train/test: Train=(18001, 27), Test=(4501, 27)
+2025-12-10 10:57:38,679 [MainPipeline] [INFO] Đang thực hiện Scaling (MinMax) trên các cột: ['DienTich_m2', 'PhongNgu', 'PhongTam', 'TongPhong', 'DienTich_per_Phong', 'TyLe_Ngu_Tam']
+2025-12-10 10:57:38,697 [MainPipeline] [INFO] Đã lưu Scaler tại: models/saved_models\scaler.joblib
+2025-12-10 10:57:38,697 [MainPipeline] [INFO] ============================================================
+2025-12-10 10:57:38,698 [MainPipeline] [INFO] Tối ưu siêu tham số cho model: RandomForest
+2025-12-10 10:57:38,699 [MainPipeline] [INFO] -> Chạy Search với n_iter=20, cv=5
+2025-12-10 10:58:50,948 [MainPipeline] [INFO] Best params cho RandomForest: {'n_estimators': 300, 'min_samples_split': 5, 'min_samples_leaf': 4, 'max_features': 'sqrt', 'max_depth': 20}
+2025-12-10 10:58:51,174 [MainPipeline] [INFO] [RandomForest] TRAIN: R2=0.6428, RMSE=0.2313 | TEST: R2=0.5513, RMSE=0.2587
+2025-12-10 10:58:51,262 [MainPipeline] [INFO] Đã lưu model [RandomForest] vào: models/saved_models\RandomForest_best_model.joblib
+2025-12-10 10:58:51,262 [MainPipeline] [INFO] ============================================================
+2025-12-10 10:58:51,262 [MainPipeline] [INFO] Tối ưu siêu tham số cho model: XGBoost
+2025-12-10 10:58:51,263 [MainPipeline] [INFO] -> Chạy Search với n_iter=20, cv=5
+2025-12-10 10:59:45,897 [MainPipeline] [INFO] Best params cho XGBoost: {'subsample': 0.7, 'reg_lambda': 10.0, 'reg_alpha': 0.1, 'n_estimators': 1500, 'max_depth': 6, 'learning_rate': 0.02, 'colsample_bytree': 0.7}
+2025-12-10 10:59:46,157 [MainPipeline] [INFO] [XGBoost] TRAIN: R2=0.6685, RMSE=0.2228 | TEST: R2=0.5510, RMSE=0.2588
+2025-12-10 10:59:46,248 [MainPipeline] [INFO] Đã lưu model [XGBoost] vào: models/saved_models\XGBoost_best_model.joblib
+2025-12-10 10:59:46,249 [MainPipeline] [INFO] ============================================================
+2025-12-10 10:59:46,249 [MainPipeline] [INFO] Tối ưu siêu tham số cho model: SVR
+2025-12-10 10:59:46,250 [MainPipeline] [INFO] -> Chạy Search với n_iter=20, cv=5
+2025-12-10 11:02:54,782 [MainPipeline] [INFO] Best params cho SVR: {'epsilon': 0.1, 'C': 0.01}
+2025-12-10 11:03:07,921 [MainPipeline] [INFO] [SVR] TRAIN: R2=0.4601, RMSE=0.2844 | TEST: R2=0.4619, RMSE=0.2833
+2025-12-10 11:03:07,932 [MainPipeline] [INFO] Đã lưu model [SVR] vào: models/saved_models\SVR_best_model.joblib
+2025-12-10 11:03:07,932 [MainPipeline] [INFO] ============================================================
+2025-12-10 11:03:07,933 [MainPipeline] [INFO] Đang huấn luyện Voting Regressor từ: ['RandomForest', 'XGBoost']...
+2025-12-10 11:03:15,819 [MainPipeline] [INFO] [Voting_Ensemble] TRAIN: R2=0.6610, RMSE=0.2253 | TEST: R2=0.5567, RMSE=0.2571
+2025-12-10 11:03:16,365 [MainPipeline] [INFO] Đã lưu model [Voting_Ensemble] vào: models/saved_models\Voting_Ensemble_best_model.joblib
+2025-12-10 11:03:16,372 [MainPipeline] [INFO] Đã lưu bảng kết quả vào: models/metrics\model_results_summary.csv
+2025-12-10 11:03:16,373 [MainPipeline] [INFO] Đã lưu bảng kết quả JSON vào: models/metrics\model_results_summary.json
+2025-12-10 11:03:16,936 [MainPipeline] [INFO] Mô hình tốt nhất theo RMSE: Voting_Ensemble. Đã lưu vào: models/saved_models\best_overall_model.joblib
+2025-12-10 11:03:17,528 [MainPipeline] [INFO] Đã lưu biểu đồ RMSE: reports/figures\rmse_comparison.png
+2025-12-10 11:03:18,170 [MainPipeline] [INFO] Đã lưu biểu đồ MAE: reports/figures\mae_comparison.png
+2025-12-10 11:03:18,175 [MainPipeline] [INFO] Mô hình tốt nhất: Voting_Ensemble
+2025-12-10 11:03:18,176 [MainPipeline] [INFO] 
+=============================================
+2025-12-10 11:03:18,177 [MainPipeline] [INFO]    BẮT ĐẦU PHÂN TÍCH KẾT QUẢ MÔ HÌNH
+2025-12-10 11:03:18,177 [MainPipeline] [INFO] =============================================
+2025-12-10 11:03:18,178 [MainPipeline] [INFO] >> Đang phân tích model: RandomForest
+2025-12-10 11:03:18,179 [src.visualization] [INFO] === BẮT ĐẦU PHÂN TÍCH MÔ HÌNH (MODEL ANALYSIS) ===
+2025-12-10 11:03:18,382 [src.visualization] [INFO] 
+--- ĐANG VẼ BIỂU ĐỒ ACTUAL vs PREDICTED (RandomForest) ---
+2025-12-10 11:03:19,497 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\model_actual_vs_predicted_RandomForest.png
+2025-12-10 11:03:19,516 [src.visualization] [INFO] 
+--- ĐANG VẼ BIỂU ĐỒ RESIDUALS (RandomForest) ---
+2025-12-10 11:03:21,494 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\model_residuals_RandomForest.png
+2025-12-10 11:03:21,515 [src.visualization] [INFO] 
+--- ĐANG VẼ FEATURE IMPORTANCE (RandomForest) ---
+2025-12-10 11:03:23,014 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\model_feature_importance_RandomForest.png
+2025-12-10 11:03:23,030 [src.visualization] [INFO] === HOÀN TẤT PHÂN TÍCH MÔ HÌNH ===
+2025-12-10 11:03:23,152 [src.visualization] [INFO] 
+--- ĐANG VẼ FEATURE IMPORTANCE (RandomForest) ---
+2025-12-10 11:03:24,672 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\model_feature_importance_RandomForest.png
+2025-12-10 11:03:24,692 [MainPipeline] [INFO] >> Đang phân tích model: XGBoost
+2025-12-10 11:03:24,694 [src.visualization] [INFO] === BẮT ĐẦU PHÂN TÍCH MÔ HÌNH (MODEL ANALYSIS) ===
+2025-12-10 11:03:24,753 [src.visualization] [INFO] 
+--- ĐANG VẼ BIỂU ĐỒ ACTUAL vs PREDICTED (XGBoost) ---
+2025-12-10 11:03:25,911 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\model_actual_vs_predicted_XGBoost.png
+2025-12-10 11:03:25,951 [src.visualization] [INFO] 
+--- ĐANG VẼ BIỂU ĐỒ RESIDUALS (XGBoost) ---
+2025-12-10 11:03:27,913 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\model_residuals_XGBoost.png
+2025-12-10 11:03:27,943 [src.visualization] [INFO] 
+--- ĐANG VẼ FEATURE IMPORTANCE (XGBoost) ---
+2025-12-10 11:03:29,239 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\model_feature_importance_XGBoost.png
+2025-12-10 11:03:29,265 [src.visualization] [INFO] === HOÀN TẤT PHÂN TÍCH MÔ HÌNH ===
+2025-12-10 11:03:29,272 [src.visualization] [INFO] 
+--- ĐANG VẼ FEATURE IMPORTANCE (XGBoost) ---
+2025-12-10 11:03:30,528 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\model_feature_importance_XGBoost.png
+2025-12-10 11:03:30,545 [MainPipeline] [INFO] >> Đang phân tích model: SVR
+2025-12-10 11:03:30,546 [src.visualization] [INFO] === BẮT ĐẦU PHÂN TÍCH MÔ HÌNH (MODEL ANALYSIS) ===
+2025-12-10 11:03:33,529 [src.visualization] [INFO] 
+--- ĐANG VẼ BIỂU ĐỒ ACTUAL vs PREDICTED (SVR) ---
+2025-12-10 11:03:34,723 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\model_actual_vs_predicted_SVR.png
+2025-12-10 11:03:34,742 [src.visualization] [INFO] 
+--- ĐANG VẼ BIỂU ĐỒ RESIDUALS (SVR) ---
+2025-12-10 11:03:36,707 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\model_residuals_SVR.png
+2025-12-10 11:03:36,727 [src.visualization] [INFO] 
+--- ĐANG VẼ FEATURE IMPORTANCE (SVR) ---
+2025-12-10 11:03:36,728 [src.visualization] [WARNING] Model SVR không hỗ trợ feature_importances_.
+2025-12-10 11:03:36,728 [src.visualization] [INFO] === HOÀN TẤT PHÂN TÍCH MÔ HÌNH ===
+2025-12-10 11:03:36,728 [MainPipeline] [INFO] Model SVR không có feature_importances_. Chuyển sang dùng Permutation Importance.
+2025-12-10 11:03:36,729 [src.visualization] [INFO] 
+--- ĐANG TÍNH PERMUTATION IMPORTANCE CHO SVR (Sẽ hơi lâu xíu...) ---
+2025-12-10 11:06:02,104 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\model_permutation_importance_SVR.png
+2025-12-10 11:06:02,120 [MainPipeline] [INFO] >> Đang phân tích model: Voting_Ensemble
+2025-12-10 11:06:02,121 [src.visualization] [INFO] === BẮT ĐẦU PHÂN TÍCH MÔ HÌNH (MODEL ANALYSIS) ===
+2025-12-10 11:06:02,371 [src.visualization] [INFO] 
+--- ĐANG VẼ BIỂU ĐỒ ACTUAL vs PREDICTED (Voting_Ensemble) ---
+2025-12-10 11:06:03,425 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\model_actual_vs_predicted_Voting_Ensemble.png
+2025-12-10 11:06:03,437 [src.visualization] [INFO] 
+--- ĐANG VẼ BIỂU ĐỒ RESIDUALS (Voting_Ensemble) ---
+2025-12-10 11:06:04,961 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\model_residuals_Voting_Ensemble.png
+2025-12-10 11:06:04,973 [src.visualization] [INFO] 
+--- ĐANG VẼ FEATURE IMPORTANCE (Voting_Ensemble) ---
+2025-12-10 11:06:04,973 [src.visualization] [WARNING] Model Voting_Ensemble không hỗ trợ feature_importances_.
+2025-12-10 11:06:04,973 [src.visualization] [INFO] === HOÀN TẤT PHÂN TÍCH MÔ HÌNH ===
+2025-12-10 11:06:04,974 [MainPipeline] [INFO] Model Voting_Ensemble không có feature_importances_. Chuyển sang dùng Permutation Importance.
+2025-12-10 11:06:04,974 [src.visualization] [INFO] 
+--- ĐANG TÍNH PERMUTATION IMPORTANCE CHO Voting_Ensemble (Sẽ hơi lâu xíu...) ---
+2025-12-10 11:06:45,949 [src.visualization] [INFO] >> Đã lưu biểu đồ: reports/figures\model_permutation_importance_Voting_Ensemble.png
+2025-12-10 11:06:45,967 [MainPipeline] [INFO] >> Model Analysis hoàn tất.
+2025-12-10 11:06:45,967 [MainPipeline] [INFO] === PIPELINE KẾT THÚC THÀNH CÔNG ===
